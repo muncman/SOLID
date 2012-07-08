@@ -39,23 +39,23 @@
 		3861499415AA2C3B00E79B6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3861499615AA2C3B00E79B6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3861499815AA2C3B00E79B6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3861499C15AA2C3B00E79B6C /* SOLID-Info.plist */ = {isa = PBXFileReference; path = "SOLID-Info.plist"; sourceTree = "<group>"; };
+		3861499C15AA2C3B00E79B6C /* SOLID-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOLID-Info.plist"; sourceTree = "<group>"; };
 		3861499E15AA2C3B00E79B6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		386149A015AA2C3B00E79B6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		386149A215AA2C3B00E79B6C /* SOLID-Prefix.pch */ = {isa = PBXFileReference; path = "SOLID-Prefix.pch"; sourceTree = "<group>"; };
-		386149A315AA2C3B00E79B6C /* MUAppDelegate.h */ = {isa = PBXFileReference; path = MUAppDelegate.h; sourceTree = "<group>"; };
+		386149A215AA2C3B00E79B6C /* SOLID-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOLID-Prefix.pch"; sourceTree = "<group>"; };
+		386149A315AA2C3B00E79B6C /* MUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUAppDelegate.h; sourceTree = "<group>"; };
 		386149A415AA2C3B00E79B6C /* MUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUAppDelegate.m; sourceTree = "<group>"; };
 		386149A715AA2C3B00E79B6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		386149AA15AA2C3B00E79B6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		386149AC15AA2C3B00E79B6C /* MUMasterViewController.h */ = {isa = PBXFileReference; path = MUMasterViewController.h; sourceTree = "<group>"; };
+		386149AC15AA2C3B00E79B6C /* MUMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUMasterViewController.h; sourceTree = "<group>"; };
 		386149AD15AA2C3B00E79B6C /* MUMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUMasterViewController.m; sourceTree = "<group>"; };
-		386149AF15AA2C3B00E79B6C /* MUDetailViewController.h */ = {isa = PBXFileReference; path = MUDetailViewController.h; sourceTree = "<group>"; };
+		386149AF15AA2C3B00E79B6C /* MUDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUDetailViewController.h; sourceTree = "<group>"; };
 		386149B015AA2C3B00E79B6C /* MUDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUDetailViewController.m; sourceTree = "<group>"; };
 		386149B715AA2C3B00E79B6C /* SOLIDTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOLIDTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		386149B815AA2C3B00E79B6C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */ = {isa = PBXFileReference; path = "SOLIDTests-Info.plist"; sourceTree = "<group>"; };
+		386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOLIDTests-Info.plist"; sourceTree = "<group>"; };
 		386149C215AA2C3B00E79B6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		386149C415AA2C3B00E79B6C /* SOLIDTests.h */ = {isa = PBXFileReference; path = SOLIDTests.h; sourceTree = "<group>"; };
+		386149C415AA2C3B00E79B6C /* SOLIDTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOLIDTests.h; sourceTree = "<group>"; };
 		386149C515AA2C3B00E79B6C /* SOLIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOLIDTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
