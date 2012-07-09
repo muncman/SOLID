@@ -21,7 +21,11 @@
 		386149BA15AA2C3B00E79B6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499415AA2C3B00E79B6C /* UIKit.framework */; };
 		386149BB15AA2C3B00E79B6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499615AA2C3B00E79B6C /* Foundation.framework */; };
 		386149C315AA2C3B00E79B6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386149C115AA2C3B00E79B6C /* InfoPlist.strings */; };
-		386149C615AA2C3B00E79B6C /* SOLIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149C515AA2C3B00E79B6C /* SOLIDTests.m */; };
+		386149D515AA689D00E79B6C /* MUPrinciples.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149D415AA689D00E79B6C /* MUPrinciples.m */; };
+		386149D915AA69D000E79B6C /* MUConcept.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149D815AA69D000E79B6C /* MUConcept.m */; };
+		386149DC15AA87E500E79B6C /* MUConceptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DB15AA87E500E79B6C /* MUConceptTest.m */; };
+		386149DF15AA8B7C00E79B6C /* MUPrinciplesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */; };
+		386149E115AA968A00E79B6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 386149E015AA968A00E79B6C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +59,15 @@
 		386149B815AA2C3B00E79B6C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOLIDTests-Info.plist"; sourceTree = "<group>"; };
 		386149C215AA2C3B00E79B6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		386149C415AA2C3B00E79B6C /* SOLIDTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOLIDTests.h; sourceTree = "<group>"; };
-		386149C515AA2C3B00E79B6C /* SOLIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOLIDTests.m; sourceTree = "<group>"; };
+		386149D315AA689C00E79B6C /* MUPrinciples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUPrinciples.h; sourceTree = "<group>"; };
+		386149D415AA689D00E79B6C /* MUPrinciples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUPrinciples.m; sourceTree = "<group>"; };
+		386149D715AA69D000E79B6C /* MUConcept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUConcept.h; sourceTree = "<group>"; };
+		386149D815AA69D000E79B6C /* MUConcept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUConcept.m; sourceTree = "<group>"; };
+		386149DA15AA87E500E79B6C /* MUConceptTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUConceptTest.h; sourceTree = "<group>"; };
+		386149DB15AA87E500E79B6C /* MUConceptTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUConceptTest.m; sourceTree = "<group>"; };
+		386149DD15AA8B7C00E79B6C /* MUPrinciplesTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUPrinciplesTest.h; sourceTree = "<group>"; };
+		386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUPrinciplesTest.m; sourceTree = "<group>"; };
+		386149E015AA968A00E79B6C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,14 +127,18 @@
 		3861499A15AA2C3B00E79B6C /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
+				386149A915AA2C3B00E79B6C /* MainStoryboard_iPad.storyboard */,
+				386149A615AA2C3B00E79B6C /* MainStoryboard_iPhone.storyboard */,
 				386149A315AA2C3B00E79B6C /* MUAppDelegate.h */,
 				386149A415AA2C3B00E79B6C /* MUAppDelegate.m */,
-				386149A615AA2C3B00E79B6C /* MainStoryboard_iPhone.storyboard */,
-				386149A915AA2C3B00E79B6C /* MainStoryboard_iPad.storyboard */,
-				386149AC15AA2C3B00E79B6C /* MUMasterViewController.h */,
-				386149AD15AA2C3B00E79B6C /* MUMasterViewController.m */,
+				386149D715AA69D000E79B6C /* MUConcept.h */,
+				386149D815AA69D000E79B6C /* MUConcept.m */,
 				386149AF15AA2C3B00E79B6C /* MUDetailViewController.h */,
 				386149B015AA2C3B00E79B6C /* MUDetailViewController.m */,
+				386149AC15AA2C3B00E79B6C /* MUMasterViewController.h */,
+				386149AD15AA2C3B00E79B6C /* MUMasterViewController.m */,
+				386149D315AA689C00E79B6C /* MUPrinciples.h */,
+				386149D415AA689D00E79B6C /* MUPrinciples.m */,
 				3861499B15AA2C3B00E79B6C /* Supporting Files */,
 			);
 			path = SOLID;
@@ -132,9 +147,10 @@
 		3861499B15AA2C3B00E79B6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3861499C15AA2C3B00E79B6C /* SOLID-Info.plist */,
 				3861499D15AA2C3B00E79B6C /* InfoPlist.strings */,
 				386149A015AA2C3B00E79B6C /* main.m */,
+				386149E015AA968A00E79B6C /* README.md */,
+				3861499C15AA2C3B00E79B6C /* SOLID-Info.plist */,
 				386149A215AA2C3B00E79B6C /* SOLID-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -143,8 +159,10 @@
 		386149BE15AA2C3B00E79B6C /* SOLIDTests */ = {
 			isa = PBXGroup;
 			children = (
-				386149C415AA2C3B00E79B6C /* SOLIDTests.h */,
-				386149C515AA2C3B00E79B6C /* SOLIDTests.m */,
+				386149DA15AA87E500E79B6C /* MUConceptTest.h */,
+				386149DB15AA87E500E79B6C /* MUConceptTest.m */,
+				386149DD15AA8B7C00E79B6C /* MUPrinciplesTest.h */,
+				386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */,
 				386149BF15AA2C3B00E79B6C /* Supporting Files */,
 			);
 			path = SOLIDTests;
@@ -234,6 +252,7 @@
 				3861499F15AA2C3B00E79B6C /* InfoPlist.strings in Resources */,
 				386149A815AA2C3B00E79B6C /* MainStoryboard_iPhone.storyboard in Resources */,
 				386149AB15AA2C3B00E79B6C /* MainStoryboard_iPad.storyboard in Resources */,
+				386149E115AA968A00E79B6C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +291,8 @@
 				386149A515AA2C3B00E79B6C /* MUAppDelegate.m in Sources */,
 				386149AE15AA2C3B00E79B6C /* MUMasterViewController.m in Sources */,
 				386149B115AA2C3B00E79B6C /* MUDetailViewController.m in Sources */,
+				386149D515AA689D00E79B6C /* MUPrinciples.m in Sources */,
+				386149D915AA69D000E79B6C /* MUConcept.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				386149C615AA2C3B00E79B6C /* SOLIDTests.m in Sources */,
+				386149DC15AA87E500E79B6C /* MUConceptTest.m in Sources */,
+				386149DF15AA8B7C00E79B6C /* MUPrinciplesTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +473,7 @@
 				386149CB15AA2C3B00E79B6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		386149CC15AA2C3B00E79B6C /* Build configuration list for PBXNativeTarget "SOLIDTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +482,7 @@
 				386149CE15AA2C3B00E79B6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,12 +7,14 @@
 //
 
 #import "MUMasterViewController.h"
-
 #import "MUDetailViewController.h"
+#import "MUPrinciples.h"
+#import "MUConcept.h"
 
 @interface MUMasterViewController () {
-    NSMutableArray *_objects;
+    __strong MUPrinciples *_principles;
 }
+- (MUConcept *)conceptForPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation MUMasterViewController
@@ -25,6 +27,7 @@
         self.clearsSelectionOnViewWillAppear = NO;
         self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
     }
+    _principles = [[MUPrinciples alloc] init];
     [super awakeFromNib];
 }
 
@@ -59,23 +62,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return [[_principles initials] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    cell.textLabel.text = [object description];
+    MUConcept *principle = [self conceptForPath:indexPath];
+    cell.textLabel.text = principle.initial;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = [_objects objectAtIndex:indexPath.row];
-        self.detailViewController.detailItem = object;
+        MUConcept *principle = [self conceptForPath:indexPath];
+        self.detailViewController.detailItem = principle;
     }
 }
 
@@ -83,9 +86,15 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = [_objects objectAtIndex:indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        MUConcept *principle = [self conceptForPath:indexPath];
+        [[segue destinationViewController] setDetailItem:principle];
     }
+}
+
+#pragma mark - Private Methods
+
+- (MUConcept *)conceptForPath:(NSIndexPath *)indexPath {
+    return [_principles conceptForInitial:[_principles.initials objectAtIndex:indexPath.row]];
 }
 
 @end
