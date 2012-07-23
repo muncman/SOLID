@@ -19,6 +19,7 @@ build/
 *.out
 *.log
 Doxygen/*
+test-reports
 
 # Backup files
 *~.nib
