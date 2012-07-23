@@ -1,2 +1,2 @@
 #!/bin/sh
-/Applications/Doxygen.app/Contents/Resources/doxygen ./Doxyfile
+/Applications/Doxygen.app/Contents/Resources/doxygen Doxygen/Doxyfile
