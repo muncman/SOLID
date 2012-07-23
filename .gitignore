@@ -18,6 +18,7 @@ build/
 *.[oa]
 *.out
 *.log
+Docs/
 
 # Backup files
 *~.nib
