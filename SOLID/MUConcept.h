@@ -12,9 +12,10 @@
 
 @property (nonatomic, strong, readonly) NSString *initial;
 @property (nonatomic, strong, readonly) NSString *acronym;
+@property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) NSString *textDescription;
 
 // Designated Initializer
-- (id)initWithInitial:(NSString *)theInitial acronym:(NSString *)theAcronym description:(NSString *)theDescription;
+- (id)initWithInitial:(NSString *)theInitial acronym:(NSString *)theAcronym name:(NSString *)theName description:(NSString *)theDescription;
 
 @end

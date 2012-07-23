@@ -7,6 +7,7 @@
 //
 
 #import "MUDetailViewController.h"
+#import "MUConcept.h"
 
 @interface MUDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -17,6 +18,7 @@
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize detailTitleLabel = _detailTitleLabel;
 @synthesize masterPopoverController = _masterPopoverController;
 
 #pragma mark - Managing the detail item
@@ -40,7 +42,9 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.detailDescriptionLabel.text = self.detailItem.textDescription;
+        self.detailTitleLabel.text = self.detailItem.name;
+        self.title = self.detailItem.acronym;
     }
 }
 

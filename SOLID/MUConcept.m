@@ -12,12 +12,14 @@
 
 @synthesize initial = _initial;
 @synthesize acronym = _acronym;
+@synthesize name = _name;
 @synthesize textDescription = _textDescription;
 
-- (id)initWithInitial:(NSString *)theInitial acronym:(NSString *)theAcronym description:(NSString *)theDescription {
+- (id)initWithInitial:(NSString *)theInitial acronym:(NSString *)theAcronym name:(NSString *)theName description:(NSString *)theDescription {
     if (self == [super init]) {
         _initial = theInitial;
         _acronym = theAcronym;
+        _name = theName;
         _textDescription = theDescription;
     }
     return self;
@@ -30,6 +32,7 @@
     NSArray *result = [NSArray arrayWithObjects:
                        @"initial",
                        @"acronym",
+                       @"name",
                        @"textDescription",
                        nil];
     return result;

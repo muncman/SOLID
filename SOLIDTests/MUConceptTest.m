@@ -13,7 +13,7 @@
 
 - (void)setUp {
     [super setUp];
-    instance = [[MUConcept alloc] initWithInitial:@"X" acronym:@"XOM" description:@"My son's initials"];
+    instance = [[MUConcept alloc] initWithInitial:@"X" acronym:@"XOM" name:@"Xander Orion Munc" description:@"My son's initials"];
 }
 
 - (void)tearDown {
@@ -24,6 +24,7 @@
 - (void)testThatTheObjCRuntimeWorksAsExpectedForConceptModels {
     STAssertEqualObjects(@"X", instance.initial, nil);
     STAssertEqualObjects(@"XOM", instance.acronym, nil);
+    STAssertEqualObjects(@"Xander Orion Munc", instance.name, nil);
     STAssertEqualObjects(@"My son's initials", instance.textDescription, nil);
 }
 

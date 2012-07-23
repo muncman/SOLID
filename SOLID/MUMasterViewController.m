@@ -65,12 +65,17 @@
     return [[_principles initials] count];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"Basic principles of OOAD";
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
     MUConcept *principle = [self conceptForPath:indexPath];
-    cell.textLabel.text = principle.initial;
+    cell.textLabel.text = principle.acronym;
     return cell;
 }
 
