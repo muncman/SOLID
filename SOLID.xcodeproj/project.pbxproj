@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3803A75B15BE171A0062C114 /* ocunit2junit.rb in Resources */ = {isa = PBXBuildFile; fileRef = 3803A75915BE171A0062C114 /* ocunit2junit.rb */; };
+		3803A75C15BE171A0062C114 /* RunPlatformUnitTests in Resources */ = {isa = PBXBuildFile; fileRef = 3803A75A15BE171A0062C114 /* RunPlatformUnitTests */; };
 		3861499515AA2C3B00E79B6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499415AA2C3B00E79B6C /* UIKit.framework */; };
 		3861499715AA2C3B00E79B6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499615AA2C3B00E79B6C /* Foundation.framework */; };
 		3861499915AA2C3B00E79B6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499815AA2C3B00E79B6C /* CoreGraphics.framework */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3803A75915BE171A0062C114 /* ocunit2junit.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ocunit2junit.rb; sourceTree = "<group>"; };
+		3803A75A15BE171A0062C114 /* RunPlatformUnitTests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunPlatformUnitTests; sourceTree = "<group>"; };
 		3861499015AA2C3B00E79B6C /* SOLID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3861499415AA2C3B00E79B6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3861499615AA2C3B00E79B6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -171,8 +175,10 @@
 		386149BF15AA2C3B00E79B6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */,
 				386149C115AA2C3B00E79B6C /* InfoPlist.strings */,
+				3803A75915BE171A0062C114 /* ocunit2junit.rb */,
+				3803A75A15BE171A0062C114 /* RunPlatformUnitTests */,
+				386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				386149C315AA2C3B00E79B6C /* InfoPlist.strings in Resources */,
+				3803A75B15BE171A0062C114 /* ocunit2junit.rb in Resources */,
+				3803A75C15BE171A0062C114 /* RunPlatformUnitTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
