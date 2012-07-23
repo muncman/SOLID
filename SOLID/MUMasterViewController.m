@@ -36,6 +36,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.detailViewController = (MUDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    // Initialize to first item. 
+    MUConcept *principle = [self conceptForPath:0];
+    self.detailViewController.detailItem = principle;
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
 }
 
 - (void)viewDidUnload
