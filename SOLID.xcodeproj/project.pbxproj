@@ -54,6 +54,20 @@
 		386149DC15AA87E500E79B6C /* MUConceptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DB15AA87E500E79B6C /* MUConceptTest.m */; };
 		386149DF15AA8B7C00E79B6C /* MUPrinciplesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */; };
 		386149E115AA968A00E79B6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 386149E015AA968A00E79B6C /* README.md */; };
+		388E0B3015BF1924009BB531 /* run_gcovr.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2D15BF1924009BB531 /* run_gcovr.sh */; };
+		388E0B3115BF1924009BB531 /* run_testflight_deploy.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2E15BF1924009BB531 /* run_testflight_deploy.sh */; };
+		388E0B3215BF1924009BB531 /* run_tests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2F15BF1924009BB531 /* run_tests.sh */; };
+		388E0B4015BF1969009BB531 /* run_uiautomation.rb in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3415BF1969009BB531 /* run_uiautomation.rb */; };
+		388E0B4115BF1969009BB531 /* run_uiautomation.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3515BF1969009BB531 /* run_uiautomation.sh */; };
+		388E0B4215BF1969009BB531 /* testSOLID.js in Sources */ = {isa = PBXBuildFile; fileRef = 388E0B3615BF1969009BB531 /* testSOLID.js */; };
+		388E0B4315BF1969009BB531 /* assertions.js in Sources */ = {isa = PBXBuildFile; fileRef = 388E0B3815BF1969009BB531 /* assertions.js */; };
+		388E0B4415BF1969009BB531 /* lang-ext.js in Sources */ = {isa = PBXBuildFile; fileRef = 388E0B3915BF1969009BB531 /* lang-ext.js */; };
+		388E0B4515BF1969009BB531 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3A15BF1969009BB531 /* LICENSE */; };
+		388E0B4615BF1969009BB531 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3B15BF1969009BB531 /* README.md */; };
+		388E0B4715BF1969009BB531 /* screen.js in Sources */ = {isa = PBXBuildFile; fileRef = 388E0B3C15BF1969009BB531 /* screen.js */; };
+		388E0B4815BF1969009BB531 /* test.js in Sources */ = {isa = PBXBuildFile; fileRef = 388E0B3D15BF1969009BB531 /* test.js */; };
+		388E0B4915BF1969009BB531 /* tuneup.js in Sources */ = {isa = PBXBuildFile; fileRef = 388E0B3E15BF1969009BB531 /* tuneup.js */; };
+		388E0B4A15BF1969009BB531 /* uiautomation-ext.js in Sources */ = {isa = PBXBuildFile; fileRef = 388E0B3F15BF1969009BB531 /* uiautomation-ext.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +101,6 @@
 		3803A77215BE37E40062C114 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3803A77315BE37E40062C114 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3803A78715BE5AFE0062C114 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		3803A7AB15BE75D30062C114 /* SOLID copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SOLID copy-Info.plist"; path = "/Users/muncman/workspace/SOLID/SOLID copy-Info.plist"; sourceTree = "<absolute>"; };
 		3803A7B015BE79690062C114 /* CoverageFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverageFix.h; sourceTree = "<group>"; };
 		3803A7B115BE79690062C114 /* CoverageFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverageFix.m; sourceTree = "<group>"; };
 		3803A7C715BE7E460062C114 /* SOLIDTests copy.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOLIDTests copy.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +134,20 @@
 		386149DD15AA8B7C00E79B6C /* MUPrinciplesTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUPrinciplesTest.h; sourceTree = "<group>"; };
 		386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUPrinciplesTest.m; sourceTree = "<group>"; };
 		386149E015AA968A00E79B6C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		388E0B2D15BF1924009BB531 /* run_gcovr.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_gcovr.sh; path = ../run_gcovr.sh; sourceTree = "<group>"; };
+		388E0B2E15BF1924009BB531 /* run_testflight_deploy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_testflight_deploy.sh; path = ../run_testflight_deploy.sh; sourceTree = "<group>"; };
+		388E0B2F15BF1924009BB531 /* run_tests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_tests.sh; sourceTree = "<group>"; };
+		388E0B3415BF1969009BB531 /* run_uiautomation.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = run_uiautomation.rb; path = SOLIDFunc/run_uiautomation.rb; sourceTree = "<group>"; };
+		388E0B3515BF1969009BB531 /* run_uiautomation.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_uiautomation.sh; path = SOLIDFunc/run_uiautomation.sh; sourceTree = "<group>"; };
+		388E0B3615BF1969009BB531 /* testSOLID.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = testSOLID.js; path = SOLIDFunc/testSOLID.js; sourceTree = "<group>"; };
+		388E0B3815BF1969009BB531 /* assertions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = assertions.js; sourceTree = "<group>"; };
+		388E0B3915BF1969009BB531 /* lang-ext.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-ext.js"; sourceTree = "<group>"; };
+		388E0B3A15BF1969009BB531 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		388E0B3B15BF1969009BB531 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		388E0B3C15BF1969009BB531 /* screen.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = screen.js; sourceTree = "<group>"; };
+		388E0B3D15BF1969009BB531 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
+		388E0B3E15BF1969009BB531 /* tuneup.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tuneup.js; sourceTree = "<group>"; };
+		388E0B3F15BF1969009BB531 /* uiautomation-ext.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "uiautomation-ext.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +205,11 @@
 		3803A78915BE5B5C0062C114 /* SOLIDFunc */ = {
 			isa = PBXGroup;
 			children = (
+				388E0B3415BF1969009BB531 /* run_uiautomation.rb */,
+				388E0B3515BF1969009BB531 /* run_uiautomation.sh */,
+				3803A7C815BE7E460062C114 /* SOLIDTests copy-Info.plist */,
+				388E0B3615BF1969009BB531 /* testSOLID.js */,
+				388E0B3715BF1969009BB531 /* tuneup_js */,
 			);
 			name = SOLIDFunc;
 			sourceTree = "<group>";
@@ -191,8 +223,6 @@
 				3803A78915BE5B5C0062C114 /* SOLIDFunc */,
 				3861499315AA2C3B00E79B6C /* Frameworks */,
 				3861499115AA2C3B00E79B6C /* Products */,
-				3803A7AB15BE75D30062C114 /* SOLID copy-Info.plist */,
-				3803A7C815BE7E460062C114 /* SOLIDTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,14 +294,33 @@
 		386149BF15AA2C3B00E79B6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				386149C115AA2C3B00E79B6C /* InfoPlist.strings */,
-				3803A75915BE171A0062C114 /* ocunit2junit.rb */,
-				3803A75A15BE171A0062C114 /* RunPlatformUnitTests */,
-				386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */,
 				3803A7B015BE79690062C114 /* CoverageFix.h */,
 				3803A7B115BE79690062C114 /* CoverageFix.m */,
+				386149C115AA2C3B00E79B6C /* InfoPlist.strings */,
+				3803A75915BE171A0062C114 /* ocunit2junit.rb */,
+				388E0B2D15BF1924009BB531 /* run_gcovr.sh */,
+				388E0B2E15BF1924009BB531 /* run_testflight_deploy.sh */,
+				388E0B2F15BF1924009BB531 /* run_tests.sh */,
+				3803A75A15BE171A0062C114 /* RunPlatformUnitTests */,
+				386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		388E0B3715BF1969009BB531 /* tuneup_js */ = {
+			isa = PBXGroup;
+			children = (
+				388E0B3815BF1969009BB531 /* assertions.js */,
+				388E0B3915BF1969009BB531 /* lang-ext.js */,
+				388E0B3A15BF1969009BB531 /* LICENSE */,
+				388E0B3B15BF1969009BB531 /* README.md */,
+				388E0B3C15BF1969009BB531 /* screen.js */,
+				388E0B3D15BF1969009BB531 /* test.js */,
+				388E0B3E15BF1969009BB531 /* tuneup.js */,
+				388E0B3F15BF1969009BB531 /* uiautomation-ext.js */,
+			);
+			name = tuneup_js;
+			path = SOLIDFunc/tuneup_js;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +418,10 @@
 				3803A7C015BE7E460062C114 /* InfoPlist.strings in Resources */,
 				3803A7C115BE7E460062C114 /* ocunit2junit.rb in Resources */,
 				3803A7C215BE7E460062C114 /* RunPlatformUnitTests in Resources */,
+				388E0B4015BF1969009BB531 /* run_uiautomation.rb in Resources */,
+				388E0B4115BF1969009BB531 /* run_uiautomation.sh in Resources */,
+				388E0B4515BF1969009BB531 /* LICENSE in Resources */,
+				388E0B4615BF1969009BB531 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +454,9 @@
 				386149C315AA2C3B00E79B6C /* InfoPlist.strings in Resources */,
 				3803A75B15BE171A0062C114 /* ocunit2junit.rb in Resources */,
 				3803A75C15BE171A0062C114 /* RunPlatformUnitTests in Resources */,
+				388E0B3015BF1924009BB531 /* run_gcovr.sh in Resources */,
+				388E0B3115BF1924009BB531 /* run_testflight_deploy.sh in Resources */,
+				388E0B3215BF1924009BB531 /* run_tests.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +504,13 @@
 				384D966E15BE83420056C161 /* MUDetailViewController.m in Sources */,
 				384D966F15BE83420056C161 /* MUMasterViewController.m in Sources */,
 				384D967015BE83420056C161 /* MUPrinciples.m in Sources */,
+				388E0B4215BF1969009BB531 /* testSOLID.js in Sources */,
+				388E0B4315BF1969009BB531 /* assertions.js in Sources */,
+				388E0B4415BF1969009BB531 /* lang-ext.js in Sources */,
+				388E0B4715BF1969009BB531 /* screen.js in Sources */,
+				388E0B4815BF1969009BB531 /* test.js in Sources */,
+				388E0B4915BF1969009BB531 /* tuneup.js in Sources */,
+				388E0B4A15BF1969009BB531 /* uiautomation-ext.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# One way to make sure the simulator isn't already running.
 osascript -e 'tell app "iPhone Simulator" to quit'
 
 # cd SOLID
@@ -28,3 +29,6 @@ instruments -t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.pla
 # run_uiautomation.rb "$HOME/Library/Application Support/iPhone Simulator/5.1/Applications/3C8EE392-E24F-49B7-A8AD-1E564B11DF84/SOLID.app" $HOME/workspace/SOLID/SOLIDFunc/testSOLID.js $HOME/workspace/SOLID/SOLIDFunc/output
 # ./run_uiautomation.rb "$HOME/Library/Application Support/iPhone Simulator/5.1/Applications/3C8EE392-E24F-49B7-A8AD-1E564B11DF84/SOLID.app" "$WORKSPACE/SOLIDFunc/testSOLID.js" "$WORKSPACE/SOLIDFunc/output"
 # "$WORKSPACE/SOLIDFunc/run_uiautomation.rb" "$HOME/Library/Application Support/iPhone Simulator/5.1/Applications/3C8EE392-E24F-49B7-A8AD-1E564B11DF84/SOLID.app" "$WORKSPACE/SOLIDFunc/testSOLID.js" "$WORKSPACE/SOLIDFunc/output"
+
+# Another way to make sure the simulator isn't already running.
+killall -m -KILL "iPhone Simulator"
