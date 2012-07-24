@@ -18,9 +18,12 @@ build/
 *.[oa]
 *.out
 *.log
+*.trace
 Doxygen/*
 test-reports
+output/
 
 # Backup files
 *~.nib
 *.swp
+*.bak

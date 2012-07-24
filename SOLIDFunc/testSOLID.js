@@ -10,7 +10,7 @@
 
 UIALogger.logMessage('==== Starting Tests ====');
 
-UIATarget.localTarget().frontMostApp().logElementTree();
+// UIATarget.localTarget().frontMostApp().logElementTree();
 
 function staticTextsContain(searchTexts, searchString) {
   var stringFound = false;
@@ -29,28 +29,37 @@ function staticTextsContain(searchTexts, searchString) {
 // Specs
 //
 
-test('expected title', function(target, app) {
-  var window = app.mainWindow();
-  assertEquals('S.O.L.I.D.', window.navigationBar().name(), 'It oughtta...');
-});
+// iPhone
 
-test('number of rows', function(target, app) {
-  var window = app.mainWindow();
-  assertEquals(5, window.tableViews()[0].cells().length, 'Should be one per principle.');
-});
+// test('expected title', function(target, app) {
+//   var window = app.mainWindow();
+//   assertEquals('S.O.L.I.D.', window.navigationBar().name(), 'It oughtta...');
+// });
 
-test('first table cell', function(target, app) {
-  var window = app.mainWindow();
-  UIALogger.logDebug('first cell name = ' + window.tableViews()[0].cells()[0].name());
-  assertTrue('SRP' === window.tableViews()[0].cells()[0].name());
-});
+// test('number of rows', function(target, app) {
+//   var window = app.mainWindow();
+//   assertEquals(5, window.tableViews()[0].cells().length, 'Should be one per principle.');
+// });
 
-test('first detail screen', function(target, app) {
+// test('first table cell', function(target, app) {
+//   var window = app.mainWindow();
+//   UIALogger.logDebug('first cell name = ' + window.tableViews()[0].cells()[0].name());
+//   assertTrue('SRP' === window.tableViews()[0].cells()[0].name());
+// });
+
+// test('first detail screen', function(target, app) {
+//   var window = app.mainWindow();
+//   var firstCell = window.tableViews()[0].cells()[0];
+//   firstCell.tap();
+//   target.delay(2);
+//   assertTrue(staticTextsContain(window.staticTexts(), 'Single Responsibility Principle'), 'Should have this top label.');
+// });
+
+// iPad
+
+test('expected acronym', function(target, app) {
   var window = app.mainWindow();
-  var firstCell = window.tableViews()[0].cells()[0];
-  firstCell.tap();
-  target.delay(2);
-  assertTrue(staticTextsContain(window.staticTexts(), 'Single Responsibility Principle'), 'Should have this top label.');
+  assertEquals('S.O.L.I.D.', window.navigationBar().buttons()[0].name(), 'It oughtta...');
 });
 
 UIALogger.logMessage('==== Tests Completed ====');
