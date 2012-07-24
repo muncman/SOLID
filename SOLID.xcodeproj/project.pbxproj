@@ -20,6 +20,21 @@
 		3803A77F15BE37EC0062C114 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3803A76415BE35590062C114 /* Icon-Small.png */; };
 		3803A78015BE37EC0062C114 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3803A76515BE35590062C114 /* Icon-Small@2x.png */; };
 		3803A78815BE5AFE0062C114 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3803A78715BE5AFE0062C114 /* Default-Portrait~ipad.png */; };
+		3803A7B215BE79690062C114 /* CoverageFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803A7B115BE79690062C114 /* CoverageFix.m */; };
+		3803A7B815BE7E460062C114 /* MUConceptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DB15AA87E500E79B6C /* MUConceptTest.m */; };
+		3803A7B915BE7E460062C114 /* MUPrinciplesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */; };
+		3803A7BA15BE7E460062C114 /* CoverageFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803A7B115BE79690062C114 /* CoverageFix.m */; };
+		3803A7BC15BE7E460062C114 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386149B815AA2C3B00E79B6C /* SenTestingKit.framework */; };
+		3803A7BD15BE7E460062C114 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499415AA2C3B00E79B6C /* UIKit.framework */; };
+		3803A7BE15BE7E460062C114 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499615AA2C3B00E79B6C /* Foundation.framework */; };
+		3803A7C015BE7E460062C114 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386149C115AA2C3B00E79B6C /* InfoPlist.strings */; };
+		3803A7C115BE7E460062C114 /* ocunit2junit.rb in Resources */ = {isa = PBXBuildFile; fileRef = 3803A75915BE171A0062C114 /* ocunit2junit.rb */; };
+		3803A7C215BE7E460062C114 /* RunPlatformUnitTests in Resources */ = {isa = PBXBuildFile; fileRef = 3803A75A15BE171A0062C114 /* RunPlatformUnitTests */; };
+		384D966C15BE83420056C161 /* MUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149A415AA2C3B00E79B6C /* MUAppDelegate.m */; };
+		384D966D15BE83420056C161 /* MUConcept.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149D815AA69D000E79B6C /* MUConcept.m */; };
+		384D966E15BE83420056C161 /* MUDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149B015AA2C3B00E79B6C /* MUDetailViewController.m */; };
+		384D966F15BE83420056C161 /* MUMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149AD15AA2C3B00E79B6C /* MUMasterViewController.m */; };
+		384D967015BE83420056C161 /* MUPrinciples.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149D415AA689D00E79B6C /* MUPrinciples.m */; };
 		3861499515AA2C3B00E79B6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499415AA2C3B00E79B6C /* UIKit.framework */; };
 		3861499715AA2C3B00E79B6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499615AA2C3B00E79B6C /* Foundation.framework */; };
 		3861499915AA2C3B00E79B6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499815AA2C3B00E79B6C /* CoreGraphics.framework */; };
@@ -42,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3803A7B615BE7E460062C114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3861498715AA2C3A00E79B6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3861498F15AA2C3B00E79B6C;
+			remoteInfo = SOLID;
+		};
 		386149BC15AA2C3B00E79B6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3861498715AA2C3A00E79B6C /* Project object */;
@@ -65,6 +87,11 @@
 		3803A77215BE37E40062C114 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3803A77315BE37E40062C114 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3803A78715BE5AFE0062C114 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		3803A7AB15BE75D30062C114 /* SOLID copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SOLID copy-Info.plist"; path = "/Users/muncman/workspace/SOLID/SOLID copy-Info.plist"; sourceTree = "<absolute>"; };
+		3803A7B015BE79690062C114 /* CoverageFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverageFix.h; sourceTree = "<group>"; };
+		3803A7B115BE79690062C114 /* CoverageFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverageFix.m; sourceTree = "<group>"; };
+		3803A7C715BE7E460062C114 /* SOLIDTests copy.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOLIDTests copy.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3803A7C815BE7E460062C114 /* SOLIDTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SOLIDTests copy-Info.plist"; path = "/Users/muncman/workspace/SOLID/SOLIDTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		3861499015AA2C3B00E79B6C /* SOLID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3861499415AA2C3B00E79B6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3861499615AA2C3B00E79B6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +124,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3803A7BB15BE7E460062C114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3803A7BC15BE7E460062C114 /* SenTestingKit.framework in Frameworks */,
+				3803A7BD15BE7E460062C114 /* UIKit.framework in Frameworks */,
+				3803A7BE15BE7E460062C114 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3861498D15AA2C3B00E79B6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +191,8 @@
 				3803A78915BE5B5C0062C114 /* SOLIDFunc */,
 				3861499315AA2C3B00E79B6C /* Frameworks */,
 				3861499115AA2C3B00E79B6C /* Products */,
+				3803A7AB15BE75D30062C114 /* SOLID copy-Info.plist */,
+				3803A7C815BE7E460062C114 /* SOLIDTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +201,7 @@
 			children = (
 				3861499015AA2C3B00E79B6C /* SOLID.app */,
 				386149B715AA2C3B00E79B6C /* SOLIDTests.octest */,
+				3803A7C715BE7E460062C114 /* SOLIDTests copy.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +268,8 @@
 				3803A75915BE171A0062C114 /* ocunit2junit.rb */,
 				3803A75A15BE171A0062C114 /* RunPlatformUnitTests */,
 				386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */,
+				3803A7B015BE79690062C114 /* CoverageFix.h */,
+				3803A7B115BE79690062C114 /* CoverageFix.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -235,6 +277,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3803A7B415BE7E460062C114 /* SOLIDTests copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3803A7C415BE7E460062C114 /* Build configuration list for PBXNativeTarget "SOLIDTests copy" */;
+			buildPhases = (
+				3803A7B715BE7E460062C114 /* Sources */,
+				3803A7BB15BE7E460062C114 /* Frameworks */,
+				3803A7BF15BE7E460062C114 /* Resources */,
+				3803A7C315BE7E460062C114 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3803A7B515BE7E460062C114 /* PBXTargetDependency */,
+			);
+			name = "SOLIDTests copy";
+			productName = SOLIDTests;
+			productReference = 3803A7C715BE7E460062C114 /* SOLIDTests copy.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		3861498F15AA2C3B00E79B6C /* SOLID */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 386149C915AA2C3B00E79B6C /* Build configuration list for PBXNativeTarget "SOLID" */;
@@ -295,11 +356,22 @@
 			targets = (
 				3861498F15AA2C3B00E79B6C /* SOLID */,
 				386149B615AA2C3B00E79B6C /* SOLIDTests */,
+				3803A7B415BE7E460062C114 /* SOLIDTests copy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3803A7BF15BE7E460062C114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3803A7C015BE7E460062C114 /* InfoPlist.strings in Resources */,
+				3803A7C115BE7E460062C114 /* ocunit2junit.rb in Resources */,
+				3803A7C215BE7E460062C114 /* RunPlatformUnitTests in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3861498E15AA2C3B00E79B6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +407,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3803A7C315BE7E460062C114 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		386149B515AA2C3B00E79B6C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +436,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3803A7B715BE7E460062C114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3803A7B815BE7E460062C114 /* MUConceptTest.m in Sources */,
+				3803A7B915BE7E460062C114 /* MUPrinciplesTest.m in Sources */,
+				3803A7BA15BE7E460062C114 /* CoverageFix.m in Sources */,
+				384D966C15BE83420056C161 /* MUAppDelegate.m in Sources */,
+				384D966D15BE83420056C161 /* MUConcept.m in Sources */,
+				384D966E15BE83420056C161 /* MUDetailViewController.m in Sources */,
+				384D966F15BE83420056C161 /* MUMasterViewController.m in Sources */,
+				384D967015BE83420056C161 /* MUPrinciples.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3861498C15AA2C3B00E79B6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,12 +470,18 @@
 			files = (
 				386149DC15AA87E500E79B6C /* MUConceptTest.m in Sources */,
 				386149DF15AA8B7C00E79B6C /* MUPrinciplesTest.m in Sources */,
+				3803A7B215BE79690062C114 /* CoverageFix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3803A7B515BE7E460062C114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3861498F15AA2C3B00E79B6C /* SOLID */;
+			targetProxy = 3803A7B615BE7E460062C114 /* PBXContainerItemProxy */;
+		};
 		386149BD15AA2C3B00E79B6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3861498F15AA2C3B00E79B6C /* SOLID */;
@@ -419,6 +525,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3803A7C515BE7E460062C114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SOLID.app/SOLID";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
+				INFOPLIST_FILE = "SOLIDTests copy-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "SOLIDTests copy";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3803A7C615BE7E460062C114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SOLID.app/SOLID";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
+				INFOPLIST_FILE = "SOLIDTests copy-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "SOLIDTests copy";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		386149C715AA2C3B00E79B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -525,6 +671,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3803A7C415BE7E460062C114 /* Build configuration list for PBXNativeTarget "SOLIDTests copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3803A7C515BE7E460062C114 /* Debug */,
+				3803A7C615BE7E460062C114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3861498A15AA2C3A00E79B6C /* Build configuration list for PBXProject "SOLID" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
