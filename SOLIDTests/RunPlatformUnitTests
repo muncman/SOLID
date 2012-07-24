@@ -102,6 +102,7 @@ Main() {
         mkdir "${CFFIXED_USER_HOME}/Documents"
         export OTHER_TEST_FLAGS="-RegisterForSystemEvents"
         RunTestsForApplication "${TEST_HOST}" "${TEST_BUNDLE_PATH}"
+        echo "................................ EXITING MODIFIED XCODE SCRIPT SECTION ................................"
         ###   E N D   C H A N G E S   W E R E   M A D E   F O R   CI/CLI   ###
 
     else
