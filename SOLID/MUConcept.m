@@ -15,8 +15,20 @@
 @synthesize name = _name;
 @synthesize textDescription = _textDescription;
 
-- (id)initWithInitial:(NSString *)theInitial acronym:(NSString *)theAcronym name:(NSString *)theName description:(NSString *)theDescription {
+// TODO: Do more of this for CI reports...
+// NOTE: This initializer is here to get an analyzer warning in the CI output.
+- (id)init
+{
     if (self == [super init]) {
+        _acronym = @"?";
+        _name = @"Default";
+        _textDescription = @"Default description";
+    }
+    return self;
+}
+
+- (id)initWithInitial:(NSString *)theInitial acronym:(NSString *)theAcronym name:(NSString *)theName description:(NSString *)theDescription {
+    if (self = [super init]) {
         _initial = theInitial;
         _acronym = theAcronym;
         _name = theName;
