@@ -656,6 +656,7 @@
 				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
 				INFOPLIST_FILE = "SOLID/SOLID-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -667,6 +668,7 @@
 				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
 				INFOPLIST_FILE = "SOLID/SOLID-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
