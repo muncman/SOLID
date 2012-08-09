@@ -11,7 +11,6 @@ echo "Generating duplication report."
 
 java \
 -Xmx512m \
--DObjC-CPD-LoggingEnabled=YES \
 -classpath CPD/pmd-4.2.5/lib/pmd-4.2.5.jar:CPD/ObjCLanguage-0.0.6-SNAPSHOT.jar \
 net.sourceforge.pmd.cpd.CPD \
 --minimum-tokens 25 \
@@ -19,5 +18,8 @@ net.sourceforge.pmd.cpd.CPD \
 --files "$WORKSPACE/SOLID" \
 --encoding UTF-8 \
 --format net.sourceforge.pmd.cpd.XMLRenderer > cpd-output.xml
+# --format xml
+
+# For troubleshooting: -DObjC-CPD-LoggingEnabled=YES \
 
 # NOTE: The ObjC definition doesn't seem to work with PMD 5.0.0 as of 2012.08.09.
