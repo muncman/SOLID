@@ -18,7 +18,22 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-        splitViewController.delegate = (id)navigationController.topViewController;
+//        splitViewController.delegate = (id)navigationController.topViewController;
+        for (UIViewController *vc in navigationController.viewControllers) {
+            if ([vc conformsToProtocol:@protocol(UISplitViewControllerDelegate)]) {
+                splitViewController.delegate = (id<UISplitViewControllerDelegate>)vc;
+                break;
+            }
+        }
+//        id detailVC = (id)navigationController.topViewController;
+//        if ([detailVC conformsToProtocol:@protocol(UISplitViewControllerDelegate)]) {
+//#ifndef __MU_PREVENT_DELEGATE
+//            splitViewController.delegate = detailVC;
+//#endif
+//        } else {
+//            NSLog(@"WTF? Why is the wrong VC set as the topViewController?");
+//        }
+        NSLog(@"splitViewController.delegate = %@", splitViewController.delegate);
     }
     return YES;
 }
