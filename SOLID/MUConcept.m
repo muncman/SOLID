@@ -67,4 +67,6 @@
     return [self descriptionForKeyPaths]; 
 }
 
+// TODO: Why haven't I added isEqual and hash implementations to this class yet?!?
+
 @end

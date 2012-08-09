@@ -45,7 +45,6 @@
                              description:NSLocalizedString(@"An object should have only a single responsibility. "
                                                            "A class should have one, and only one, reason to change.", 
                                                            @"SRP description")];
-        // TODO: Look at leading or not peading the string continuations with an @?
         MUConcept *openClosed = [[MUConcept alloc] 
                                  initWithInitial:@"O"            
                                  acronym:@"OCP" 
@@ -110,6 +109,8 @@
     return [_concepts valueForKey:initial];
 }
 
+// FIXME: This task marker is here so CI can find another one.
+// TODO: If time -or eventually- integrate CPD into the CI server to find this.
 - (void)unusedMethodWithDuplicatedStatementsToTriggerCPDForCI
 {
     MUConcept *single = [[MUConcept alloc]
@@ -119,7 +120,6 @@
                          description:NSLocalizedString(@"An object should have only a single responsibility. "
                                                        "A class should have one, and only one, reason to change.",
                                                        @"SRP description")];
-    // TODO: Look at leading or not peading the string continuations with an @?
     MUConcept *openClosed = [[MUConcept alloc]
                              initWithInitial:@"O"
                              acronym:@"OCP"
