@@ -23,6 +23,8 @@ Doxygen/*
 Appledoc/*
 test-reports
 output/
+cpd-output.xml
+coverage.xml
 
 # Backup files
 *~.nib
