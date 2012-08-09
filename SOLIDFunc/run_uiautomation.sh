@@ -8,6 +8,8 @@ osascript -e 'tell app "iPhone Simulator" to quit'
 echo $0 $*
 # Better to fail early...
 set -e
+# set -o errexit
+# set -o verbose
 
 if [ -z "$WORKSPACE" ]
 then

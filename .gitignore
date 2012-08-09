@@ -20,6 +20,7 @@ build/
 *.log
 *.trace
 Doxygen/*
+Appledoc/*
 test-reports
 output/
 

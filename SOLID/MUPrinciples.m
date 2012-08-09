@@ -6,6 +6,22 @@
 //  Copyright (c) 2012 Method Up. All rights reserved.
 //
 
+/** This class demonstrates AppleDoc.
+ 
+ A second paragraph comes after an empty line.
+ 
+ int i=0;
+ i++;
+ 
+ And some sample code can also be in a block, but indented with a TAB.
+ 
+ You can also add lists, but have to keep an empty line between these blocks.
+ 
+ - One
+ - Two
+ - Three
+ */
+
 #import "MUPrinciples.h"
 #import "MUConcept.h"
 
@@ -85,6 +101,11 @@
     return [_acronymsInSequence copy];
 }
 
+/** This method looks up a concept given the initial.
+ 
+ @param string The single first letter of the concept.
+ @return The matching concept, if found; nil otherwise.
+ */
 - (MUConcept *)conceptForInitial:(NSString *)initial {
     return [_concepts valueForKey:initial];
 }
