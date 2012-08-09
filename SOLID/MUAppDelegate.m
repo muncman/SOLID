@@ -17,14 +17,29 @@
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-//        splitViewController.delegate = (id)navigationController.topViewController;
-        for (UIViewController *vc in navigationController.viewControllers) {
-            if ([vc conformsToProtocol:@protocol(UISplitViewControllerDelegate)]) {
-                splitViewController.delegate = (id<UISplitViewControllerDelegate>)vc;
+
+//        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        UINavigationController *navigationController = nil;
+        for (UIViewController *vc in splitViewController.viewControllers) {
+            if ([vc isKindOfClass:[UINavigationController class]]) {
+                navigationController = (UINavigationController *)vc;
                 break;
             }
         }
+        if (!navigationController) {
+            NSLog(@"Unable to locate navigation controller!");
+            return NO;
+        } // else, we found it, so proceed
+        
+        splitViewController.delegate = (id)navigationController.topViewController;
+        
+//        for (UIViewController *vc in navigationController.viewControllers) {
+//            if ([vc conformsToProtocol:@protocol(UISplitViewControllerDelegate)]) {
+//                splitViewController.delegate = (id<UISplitViewControllerDelegate>)vc;
+//                break;
+//            }
+//        }
+        
 //        id detailVC = (id)navigationController.topViewController;
 //        if ([detailVC conformsToProtocol:@protocol(UISplitViewControllerDelegate)]) {
 //#ifndef __MU_PREVENT_DELEGATE
@@ -33,6 +48,7 @@
 //        } else {
 //            NSLog(@"WTF? Why is the wrong VC set as the topViewController?");
 //        }
+        
         NSLog(@"splitViewController.delegate = %@", splitViewController.delegate);
     }
     return YES;
