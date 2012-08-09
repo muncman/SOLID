@@ -18,7 +18,6 @@ net.sourceforge.pmd.cpd.CPD \
 --files "$WORKSPACE/SOLID" \
 --encoding UTF-8 \
 --format net.sourceforge.pmd.cpd.XMLRenderer > cpd-output.xml
-# --format xml
 
 # For troubleshooting: -DObjC-CPD-LoggingEnabled=YES \
 
