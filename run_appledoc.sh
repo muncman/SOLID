@@ -25,5 +25,6 @@ appledoc \
 --no-repeat-first-par \
 --no-warn-invalid-crossref \
 --ignore "*.m" \
+--exit-threshold 2 \
 --index-desc "$WORKSPACE/README.md" \
 "$WORKSPACE"
