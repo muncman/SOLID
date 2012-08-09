@@ -18,7 +18,12 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
 
-//        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        // NOTE: Change the one-line statement into the loop below it.
+        //       This was done to deal with the the issue of the unit tests failing in Jenkins
+        //       if the simulator was last in iPad mode.
+        //       The failure was due to the navigationController (somehow) really being the MUMasterViewController.
+        //       Another option would be to use PListBuddy to ensure the simulator runs in iPhone mode beforehand.
+        // UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         UINavigationController *navigationController = nil;
         for (UIViewController *vc in splitViewController.viewControllers) {
             if ([vc isKindOfClass:[UINavigationController class]]) {
@@ -30,26 +35,7 @@
             NSLog(@"Unable to locate navigation controller!");
             return NO;
         } // else, we found it, so proceed
-        
         splitViewController.delegate = (id)navigationController.topViewController;
-        
-//        for (UIViewController *vc in navigationController.viewControllers) {
-//            if ([vc conformsToProtocol:@protocol(UISplitViewControllerDelegate)]) {
-//                splitViewController.delegate = (id<UISplitViewControllerDelegate>)vc;
-//                break;
-//            }
-//        }
-        
-//        id detailVC = (id)navigationController.topViewController;
-//        if ([detailVC conformsToProtocol:@protocol(UISplitViewControllerDelegate)]) {
-//#ifndef __MU_PREVENT_DELEGATE
-//            splitViewController.delegate = detailVC;
-//#endif
-//        } else {
-//            NSLog(@"WTF? Why is the wrong VC set as the topViewController?");
-//        }
-        
-        NSLog(@"splitViewController.delegate = %@", splitViewController.delegate);
     }
     return YES;
 }
