@@ -16,7 +16,7 @@ java \
 net.sourceforge.pmd.cpd.CPD \
 --minimum-tokens 25 \
 --language ObjectiveC \
---files $WORKSPACE/SOLID \
+--files "$WORKSPACE/SOLID" \
 --encoding UTF-8 \
 --format net.sourceforge.pmd.cpd.XMLRenderer > cpd-output.xml
 
