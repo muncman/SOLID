@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Using the TestFlight Plugin from &lt;a href=&quot;https://wiki.jenkins-ci.org/display/JENKINS/Testflight+Plugin&quot;&gt;here&lt;/a&gt;.&#xd;
+Also using the Xcode Plugin to create and sign the IPA.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name></name>
+        <refspec></refspec>
+        <url>https://github.com/muncman/SOLID.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>**</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <disableSubmodules>false</disableSubmodules>
+    <recursiveSubmodules>false</recursiveSubmodules>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <authorOrCommitter>false</authorOrCommitter>
+    <clean>false</clean>
+    <wipeOutWorkspace>false</wipeOutWorkspace>
+    <pruneBranches>false</pruneBranches>
+    <remotePoll>false</remotePoll>
+    <ignoreNotifyCommit>false</ignoreNotifyCommit>
+    <buildChooser class="hudson.plugins.git.util.DefaultBuildChooser"/>
+    <gitTool>Default</gitTool>
+    <submoduleCfg class="list"/>
+    <relativeTargetDir></relativeTargetDir>
+    <reference></reference>
+    <excludedRegions></excludedRegions>
+    <excludedUsers></excludedUsers>
+    <gitConfigName></gitConfigName>
+    <gitConfigEmail></gitConfigEmail>
+    <skipTag>false</skipTag>
+    <includedRegions></includedRegions>
+    <scmName></scmName>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <au.com.rayh.XCodeBuilder>
+      <cleanBeforeBuild>true</cleanBeforeBuild>
+      <cleanTestReports>false</cleanTestReports>
+      <configuration>Release</configuration>
+      <target></target>
+      <sdk></sdk>
+      <symRoot></symRoot>
+      <configurationBuildDir></configurationBuildDir>
+      <xcodeProjectPath></xcodeProjectPath>
+      <xcodeProjectFile></xcodeProjectFile>
+      <xcodebuildArguments>GCC_SYMBOLS_PRIVATE_EXTERN=NO COPY_PHASE_STRIP=NO</xcodebuildArguments>
+      <xcodeSchema></xcodeSchema>
+      <xcodeWorkspaceFile></xcodeWorkspaceFile>
+      <embeddedProfileFile>/Users/muncman/workspace/SOLID_Ad_Hoc.mobileprovision</embeddedProfileFile>
+      <cfBundleVersionValue></cfBundleVersionValue>
+      <cfBundleShortVersionStringValue></cfBundleShortVersionStringValue>
+      <buildIpa>true</buildIpa>
+      <unlockKeychain>true</unlockKeychain>
+      <keychainPath>${HOME}/Library/Keychains/login.keychain</keychainPath>
+      <keychainPwd>___REDACTED___</keychainPwd>
+    </au.com.rayh.XCodeBuilder>
+  </builders>
+  <publishers>
+    <testflight.TestflightRecorder>
+      <apiToken>___REDACTED___</apiToken>
+      <teamToken>___REDACTED___</teamToken>
+      <notifyTeam>true</notifyTeam>
+      <buildNotes>This build was made and sent using the TestFLight plugin for Jenkins.</buildNotes>
+      <filePath>$WORKSPACE/build/Release-iphoneos/SOLID-Release-1.0.ipa</filePath>
+      <dsymPath>$WORKSPACE/build/Release-iphoneos/SOLID-Release-1.0-dSYM.zip</dsymPath>
+      <lists>memyself</lists>
+      <replace>false</replace>
+      <proxyHost></proxyHost>
+      <proxyUser></proxyUser>
+      <proxyPass></proxyPass>
+      <proxyPort>0</proxyPort>
+    </testflight.TestflightRecorder>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.dumpinfo.DumpInfoBuildWrapper>
+      <dumpComputers>true</dumpComputers>
+      <dumpJdks>false</dumpJdks>
+      <dumpPlugins>false</dumpPlugins>
+      <dumpSystemProperties>false</dumpSystemProperties>
+      <dumpEnvironmentVariables>false</dumpEnvironmentVariables>
+    </hudson.plugins.dumpinfo.DumpInfoBuildWrapper>
+  </buildWrappers>
+</project>

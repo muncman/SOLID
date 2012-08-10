@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Using the Clang scan-build Plugin from &lt;a href=&quot;https://wiki.jenkins-ci.org/display/JENKINS/Clang+Scan-Build+Plugin&quot;&gt;here&lt;/a&gt; &#xd;
+for configuration.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name></name>
+        <refspec></refspec>
+        <url>https://github.com/muncman/SOLID.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>**</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <disableSubmodules>false</disableSubmodules>
+    <recursiveSubmodules>false</recursiveSubmodules>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <authorOrCommitter>false</authorOrCommitter>
+    <clean>false</clean>
+    <wipeOutWorkspace>false</wipeOutWorkspace>
+    <pruneBranches>false</pruneBranches>
+    <remotePoll>false</remotePoll>
+    <ignoreNotifyCommit>false</ignoreNotifyCommit>
+    <buildChooser class="hudson.plugins.git.util.DefaultBuildChooser"/>
+    <gitTool>Default</gitTool>
+    <submoduleCfg class="list"/>
+    <relativeTargetDir></relativeTargetDir>
+    <reference></reference>
+    <excludedRegions></excludedRegions>
+    <excludedUsers></excludedUsers>
+    <gitConfigName></gitConfigName>
+    <gitConfigEmail></gitConfigEmail>
+    <skipTag>false</skipTag>
+    <includedRegions></includedRegions>
+    <scmName></scmName>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector">
+    <hudson.triggers.SCMTrigger>
+      <spec>*/15 * * * * </spec>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <jenkins.plugins.clangscanbuild.ClangScanBuildBuilder>
+      <target>SOLID</target>
+      <targetSdk>iphonesimulator</targetSdk>
+      <config>Debug</config>
+      <clangInstallationName>267</clangInstallationName>
+    </jenkins.plugins.clangscanbuild.ClangScanBuildBuilder>
+  </builders>
+  <publishers>
+    <jenkins.plugins.clangscanbuild.publisher.ClangScanBuildPublisher>
+      <bugThreshold>0</bugThreshold>
+      <markBuildUnstableWhenThresholdIsExceeded>false</markBuildUnstableWhenThresholdIsExceeded>
+    </jenkins.plugins.clangscanbuild.publisher.ClangScanBuildPublisher>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.dumpinfo.DumpInfoBuildWrapper>
+      <dumpComputers>true</dumpComputers>
+      <dumpJdks>true</dumpJdks>
+      <dumpPlugins>true</dumpPlugins>
+      <dumpSystemProperties>true</dumpSystemProperties>
+      <dumpEnvironmentVariables>true</dumpEnvironmentVariables>
+    </hudson.plugins.dumpinfo.DumpInfoBuildWrapper>
+  </buildWrappers>
+</project>
