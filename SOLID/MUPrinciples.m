@@ -149,8 +149,9 @@
                              description:NSLocalizedString(@"Depend on abstractions, not on concretions.",
                                                            @"DIP description.")];
     // NOTE: Unused on purpose for CI report(s).
-    NSArray *unused = [NSArray arrayWithObjects:single, openClosed, liskov, interface, dependency, nil];
-    
+    NSArray *intentionallyUnused = [NSArray arrayWithObjects:single, openClosed, liskov, interface, dependency, nil];
+    NSArray *alsoUnused = [NSArray arrayWithObjects:single, openClosed, liskov, interface, dependency, nil];
+#pragma unused (alsoUnused)
 }
 
 @end
