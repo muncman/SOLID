@@ -14,17 +14,17 @@ then
 fi
 
 appledoc \
---project-name "SOLID" \
---project-company "Method Up" \
---company-id "com.methodup" \
---output "$WORKSPACE/Appledoc" \
---logformat xcode \
---keep-undocumented-objects \
---keep-undocumented-members \
---keep-intermediate-files \
---no-repeat-first-par \
---no-warn-invalid-crossref \
---ignore "*.m" \
---exit-threshold 2 \
---index-desc "$WORKSPACE/README.md" \
-"$WORKSPACE"
+	--project-name "SOLID" \
+	--project-company "Method Up" \
+	--company-id "com.methodup" \
+	--output "$WORKSPACE/Appledoc" \
+	--logformat xcode \
+	--keep-undocumented-objects \
+	--keep-undocumented-members \
+	--keep-intermediate-files \
+	--no-repeat-first-par \
+	--no-warn-invalid-crossref \
+	--ignore "*.m" \
+	--exit-threshold 2 \
+	--index-desc "$WORKSPACE/README.md" \
+	"$WORKSPACE"

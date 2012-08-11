@@ -59,7 +59,11 @@ xcodebuild -sdk iphonesimulator build CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD
 # cd -
 
 # instruments -t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate $INSTRUMENTS_BUILD_DIR/SOLID.app -e UIASCRIPT "$WORKSPACE/SOLIDFunc/testSOLID.js" -e UIARESULTSPATH $INSTRUMENTS_OUTPUT_DIR 
-instruments -t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate $INSTRUMENTS_BUILD_DIR/SOLID.app -e UIASCRIPT "$WORKSPACE/$SCRIPT_NAME" -e UIARESULTSPATH $INSTRUMENTS_OUTPUT_DIR 
+instruments \
+	-t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate \
+	$INSTRUMENTS_BUILD_DIR/SOLID.app \
+	-e UIASCRIPT "$WORKSPACE/$SCRIPT_NAME" \
+	-e UIARESULTSPATH $INSTRUMENTS_OUTPUT_DIR 
 
 # Another way to make sure the simulator isn't already running.
 killall -m -KILL "iPhone Simulator"

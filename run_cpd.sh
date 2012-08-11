@@ -10,14 +10,14 @@ fi
 echo "Generating duplication report."
 
 java \
--Xmx512m \
--classpath CPD/pmd-4.2.5/lib/pmd-4.2.5.jar:CPD/ObjCLanguage-0.0.6-SNAPSHOT.jar \
-net.sourceforge.pmd.cpd.CPD \
---minimum-tokens 25 \
---language ObjectiveC \
---files "$WORKSPACE/SOLID" \
---encoding UTF-8 \
---format net.sourceforge.pmd.cpd.XMLRenderer > cpd-output.xml
+	-Xmx512m \
+	-classpath CPD/pmd-4.2.5/lib/pmd-4.2.5.jar:CPD/ObjCLanguage-0.0.6-SNAPSHOT.jar \
+	net.sourceforge.pmd.cpd.CPD \
+	--minimum-tokens 25 \
+	--language ObjectiveC \
+	--files "$WORKSPACE/SOLID" \
+	--encoding UTF-8 \
+	--format net.sourceforge.pmd.cpd.XMLRenderer > cpd-output.xml
 
 # For troubleshooting: -DObjC-CPD-LoggingEnabled=YES \
 
