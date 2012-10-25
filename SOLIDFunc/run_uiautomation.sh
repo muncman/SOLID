@@ -43,6 +43,12 @@ echo INSTRUMENTS_OUTPUT_DIR = $INSTRUMENTS_OUTPUT_DIR
 rm -rf $INSTRUMENTS_OUTPUT_DIR
 mkdir -p $INSTRUMENTS_OUTPUT_DIR
 
+# cd ..
+# xcodebuild -target SOLID -configuration Debug -sdk iphonesimulator TARGETED_DEVICE_FAMILY=1 clean build
+# xcodebuild -sdk iphonesimulator build CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR
+xcodebuild -sdk iphonesimulator CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR clean build
+# cd -
+
 # TODO: Look into this for controlling which simulator device we get, and where we should point it.
 # /usr/libexec/PlistBuddy ./build/Debug-iphonesimulator/SOLID.app/Info.plist \
 #         -c "Delete :UIDeviceFamily" \
@@ -52,11 +58,6 @@ mkdir -p $INSTRUMENTS_OUTPUT_DIR
         -c "Delete :UIDeviceFamily" \
         -c "Add :UIDeviceFamily array" \
         -c "Add :UIDeviceFamily: integer $DEVICE_TYPE"
-
-# cd ..
-# xcodebuild -target SOLID -configuration Debug -sdk iphonesimulator TARGETED_DEVICE_FAMILY=1 clean build
-xcodebuild -sdk iphonesimulator build CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR
-# cd -
 
 # instruments -t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate $INSTRUMENTS_BUILD_DIR/SOLID.app -e UIASCRIPT "$WORKSPACE/SOLIDFunc/testSOLID.js" -e UIARESULTSPATH $INSTRUMENTS_OUTPUT_DIR 
 instruments \
