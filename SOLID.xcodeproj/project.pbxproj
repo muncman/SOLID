@@ -49,6 +49,7 @@
 		386149DC15AA87E500E79B6C /* MUConceptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DB15AA87E500E79B6C /* MUConceptTest.m */; };
 		386149DF15AA8B7C00E79B6C /* MUPrinciplesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */; };
 		386149E115AA968A00E79B6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 386149E015AA968A00E79B6C /* README.md */; };
+		387ED5D3163987720074A89A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5D2163987720074A89A /* Default-568h@2x.png */; };
 		388E0B3015BF1924009BB531 /* run_gcovr.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2D15BF1924009BB531 /* run_gcovr.sh */; };
 		388E0B3115BF1924009BB531 /* run_testflight_deploy.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2E15BF1924009BB531 /* run_testflight_deploy.sh */; };
 		388E0B3215BF1924009BB531 /* run_tests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2F15BF1924009BB531 /* run_tests.sh */; };
@@ -121,6 +122,7 @@
 		386149DD15AA8B7C00E79B6C /* MUPrinciplesTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUPrinciplesTest.h; sourceTree = "<group>"; };
 		386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUPrinciplesTest.m; sourceTree = "<group>"; };
 		386149E015AA968A00E79B6C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		387ED5D2163987720074A89A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		388E0B2D15BF1924009BB531 /* run_gcovr.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_gcovr.sh; path = ../run_gcovr.sh; sourceTree = "<group>"; };
 		388E0B2E15BF1924009BB531 /* run_testflight_deploy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_testflight_deploy.sh; path = ../run_testflight_deploy.sh; sourceTree = "<group>"; };
 		388E0B2F15BF1924009BB531 /* run_tests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_tests.sh; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		3803A75F15BE354C0062C114 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				387ED5D2163987720074A89A /* Default-568h@2x.png */,
 				3803A78715BE5AFE0062C114 /* Default-Portrait~ipad.png */,
 				3803A77215BE37E40062C114 /* Default.png */,
 				3803A77315BE37E40062C114 /* Default@2x.png */,
@@ -430,6 +433,7 @@
 				3803A77F15BE37EC0062C114 /* Icon-Small.png in Resources */,
 				3803A78015BE37EC0062C114 /* Icon-Small@2x.png in Resources */,
 				3803A78815BE5AFE0062C114 /* Default-Portrait~ipad.png in Resources */,
+				387ED5D3163987720074A89A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
