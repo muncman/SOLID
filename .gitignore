@@ -15,6 +15,7 @@ xcuserdata/
 
 # Generated files
 build/
+DerivedData/
 *.[oa]
 *.out
 *.log

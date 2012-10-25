@@ -50,9 +50,6 @@
 		386149DF15AA8B7C00E79B6C /* MUPrinciplesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */; };
 		386149E115AA968A00E79B6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 386149E015AA968A00E79B6C /* README.md */; };
 		387ED5D3163987720074A89A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5D2163987720074A89A /* Default-568h@2x.png */; };
-		387ED5DD16398AE20074A89A /* testSOLID_iPad.js in Sources */ = {isa = PBXBuildFile; fileRef = 387ED5DA16398AE20074A89A /* testSOLID_iPad.js */; };
-		387ED5DE16398AE20074A89A /* testSOLID_iPhone.js in Sources */ = {isa = PBXBuildFile; fileRef = 387ED5DB16398AE20074A89A /* testSOLID_iPhone.js */; };
-		387ED5DF16398AE20074A89A /* uiautomationHelpers.js in Sources */ = {isa = PBXBuildFile; fileRef = 387ED5DC16398AE20074A89A /* uiautomationHelpers.js */; };
 		387ED5E116398CC70074A89A /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5E016398CC70074A89A /* Default-Portrait@2x~ipad.png */; };
 		387ED5E316398CCD0074A89A /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5E216398CCD0074A89A /* Default-Landscape~ipad.png */; };
 		387ED5E516398CD30074A89A /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5E416398CD30074A89A /* Default-Landscape@2x~ipad.png */; };
@@ -521,9 +518,6 @@
 				386149B115AA2C3B00E79B6C /* MUDetailViewController.m in Sources */,
 				386149D515AA689D00E79B6C /* MUPrinciples.m in Sources */,
 				386149D915AA69D000E79B6C /* MUConcept.m in Sources */,
-				387ED5DD16398AE20074A89A /* testSOLID_iPad.js in Sources */,
-				387ED5DE16398AE20074A89A /* testSOLID_iPhone.js in Sources */,
-				387ED5DF16398AE20074A89A /* uiautomationHelpers.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

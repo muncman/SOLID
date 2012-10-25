@@ -59,6 +59,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3861498F15AA2C3B00E79B6C"
+            BuildableName = "SOLID.app"
+            BlueprintName = "SOLID"
+            ReferencedContainer = "container:SOLID.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
