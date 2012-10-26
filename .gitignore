@@ -23,6 +23,7 @@ DerivedData/
 Doxygen/*
 Appledoc/*
 test-reports
+unit_test_results
 output/
 cpd-output.xml
 coverage.xml

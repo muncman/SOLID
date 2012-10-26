@@ -489,7 +489,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n# \"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\nruby $SRCROOT/scripts/cli_unit_tests_with_ios-sim.rb\n";
+			shellScript = "# Run the unit tests in this test bundle.\n# \"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\nruby $SRCROOT/scripts/cli_unit_tests_with_ios-sim.rb\n# ruby $SRCROOT/scripts/cli_unit_tests_with_results.rb\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
