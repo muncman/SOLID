@@ -60,8 +60,9 @@ xcodebuild -sdk iphonesimulator CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR c
         -c "Add :UIDeviceFamily: integer $DEVICE_TYPE"
 
 # instruments -t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate $INSTRUMENTS_BUILD_DIR/SOLID.app -e UIASCRIPT "$WORKSPACE/SOLIDFunc/testSOLID.js" -e UIARESULTSPATH $INSTRUMENTS_OUTPUT_DIR 
+# -t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate \
 instruments \
-	-t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate \
+	-t "$WORKSPACE/SOLIDFunc/Automation.tracetemplate" \
 	$INSTRUMENTS_BUILD_DIR/SOLID.app \
 	-e UIASCRIPT "$WORKSPACE/$SCRIPT_NAME" \
 	-e UIARESULTSPATH $INSTRUMENTS_OUTPUT_DIR 
