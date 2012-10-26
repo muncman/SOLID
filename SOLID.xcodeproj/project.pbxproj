@@ -55,7 +55,6 @@
 		387ED5E516398CD30074A89A /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5E416398CD30074A89A /* Default-Landscape@2x~ipad.png */; };
 		388E0B3015BF1924009BB531 /* run_gcovr.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2D15BF1924009BB531 /* run_gcovr.sh */; };
 		388E0B3115BF1924009BB531 /* run_testflight_deploy.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2E15BF1924009BB531 /* run_testflight_deploy.sh */; };
-		388E0B3215BF1924009BB531 /* run_tests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B2F15BF1924009BB531 /* run_tests.sh */; };
 		388E0B4015BF1969009BB531 /* run_uiautomation.rb in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3415BF1969009BB531 /* run_uiautomation.rb */; };
 		388E0B4115BF1969009BB531 /* run_uiautomation.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3515BF1969009BB531 /* run_uiautomation.sh */; };
 		388E0B4515BF1969009BB531 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3A15BF1969009BB531 /* LICENSE */; };
@@ -134,7 +133,6 @@
 		387ED5E416398CD30074A89A /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		388E0B2D15BF1924009BB531 /* run_gcovr.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_gcovr.sh; path = ../run_gcovr.sh; sourceTree = "<group>"; };
 		388E0B2E15BF1924009BB531 /* run_testflight_deploy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_testflight_deploy.sh; path = ../run_testflight_deploy.sh; sourceTree = "<group>"; };
-		388E0B2F15BF1924009BB531 /* run_tests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_tests.sh; sourceTree = "<group>"; };
 		388E0B3415BF1969009BB531 /* run_uiautomation.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = run_uiautomation.rb; path = SOLIDFunc/run_uiautomation.rb; sourceTree = "<group>"; };
 		388E0B3515BF1969009BB531 /* run_uiautomation.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_uiautomation.sh; path = SOLIDFunc/run_uiautomation.sh; sourceTree = "<group>"; };
 		388E0B3815BF1969009BB531 /* assertions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = assertions.js; sourceTree = "<group>"; };
@@ -303,7 +301,6 @@
 				3803A75915BE171A0062C114 /* ocunit2junit.rb */,
 				388E0B2D15BF1924009BB531 /* run_gcovr.sh */,
 				388E0B2E15BF1924009BB531 /* run_testflight_deploy.sh */,
-				388E0B2F15BF1924009BB531 /* run_tests.sh */,
 				3803A75A15BE171A0062C114 /* RunPlatformUnitTests */,
 				386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */,
 			);
@@ -462,7 +459,6 @@
 				3803A75C15BE171A0062C114 /* RunPlatformUnitTests in Resources */,
 				388E0B3015BF1924009BB531 /* run_gcovr.sh in Resources */,
 				388E0B3115BF1924009BB531 /* run_testflight_deploy.sh in Resources */,
-				388E0B3215BF1924009BB531 /* run_tests.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +489,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\n# \"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\nruby $SRCROOT/scripts/cli_unit_tests_with_ios-sim.rb\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
