@@ -74,18 +74,7 @@
                                                                @"DIP description.")];
         NSArray *values = [NSArray arrayWithObjects:single, openClosed, liskov, interface, dependency, nil];
         _keysInSequence = [NSArray arrayWithObjects:@"S", @"O", @"L", @"I", @"D", nil];
-        _acronymsInSequence = [NSArray arrayWithObjects:@"SRzzzzzzP", @"OCP", @"LSP", @"ISP", @"DIP", nil];
-        // The following is for demo use for CocoaConf Columbus 2012.
-//        MUConcept *cocoaconf = [[MUConcept alloc] 
-//                                initWithInitial:@"C" 
-//                                acronym:@"ACC" 
-//                                name:NSLocalizedString(@"Attend CocoaConf", nil) 
-//                                description:NSLocalizedString(@"Attend CocoaConf to learn more principles, patterns "
-//                                                              "and techniques for iOS and Mac development!", 
-//                                                              @"ACC description.")];
-//        NSArray *values = [NSArray arrayWithObjects:single, openClosed, liskov, interface, dependency, cocoaconf, nil];
-//        _keysInSequence = [NSArray arrayWithObjects:@"S", @"O", @"L", @"I", @"D", @"C", nil];
-//        _acronymsInSequence = [NSArray arrayWithObjects:@"SRP", @"OCP", @"LSP", @"ISP", @"DIP", @"ACC", nil];
+        _acronymsInSequence = [NSArray arrayWithObjects:@"SRP", @"OCP", @"LSP", @"ISP", @"DIP", nil];
         _concepts = [NSDictionary dictionaryWithObjects:values forKeys:_keysInSequence];
     }
     return self;

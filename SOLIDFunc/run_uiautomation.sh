@@ -49,11 +49,7 @@ mkdir -p $INSTRUMENTS_OUTPUT_DIR
 xcodebuild -sdk iphonesimulator CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR clean build
 # cd -
 
-# TODO: Look into this for controlling which simulator device we get, and where we should point it.
-# /usr/libexec/PlistBuddy ./build/Debug-iphonesimulator/SOLID.app/Info.plist \
-#         -c "Delete :UIDeviceFamily" \
-#         -c "Add :UIDeviceFamily array" \
-#         -c "Add :UIDeviceFamily: integer 1"
+# Control which type of simulator mode we want.
 /usr/libexec/PlistBuddy $INSTRUMENTS_BUILD_DIR/SOLID.app/Info.plist \
         -c "Delete :UIDeviceFamily" \
         -c "Add :UIDeviceFamily array" \
