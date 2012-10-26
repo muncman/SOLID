@@ -8,7 +8,7 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "386149B615AA2C3B00E79B6C"
                BuildableName = "SOLIDTests.octest"
                BlueprintName = "SOLIDTests"
+               ReferencedContainer = "container:SOLID.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3803A7B415BE7E460062C114"
+               BuildableName = "SOLIDTests copy.octest"
+               BlueprintName = "SOLIDTests copy"
                ReferencedContainer = "container:SOLID.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
