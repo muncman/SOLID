@@ -9,7 +9,7 @@ UIALogger.logMessage('==== Starting Tests ====');
 
 test('expected title', function(target, app) {
  var window = app.mainWindow();
- assertEquals('SRP', window.navigationBar().name(), 'It oughtta be the first acronym by default.');
+ assertEquals('S.O.L.I.D.', window.navigationBar().name(), 'It oughtta be the app title by default.');
 });
 
 test('number of rows', function(target, app) {
