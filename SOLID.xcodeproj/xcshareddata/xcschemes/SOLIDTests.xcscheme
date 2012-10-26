@@ -38,6 +38,16 @@
                ReferencedContainer = "container:SOLID.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3803A7B415BE7E460062C114"
+               BuildableName = "SOLIDTests copy.octest"
+               BlueprintName = "SOLIDTests copy"
+               ReferencedContainer = "container:SOLID.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
