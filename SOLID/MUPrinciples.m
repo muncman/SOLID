@@ -74,7 +74,7 @@
                                                                @"DIP description.")];
         NSArray *values = [NSArray arrayWithObjects:single, openClosed, liskov, interface, dependency, nil];
         _keysInSequence = [NSArray arrayWithObjects:@"S", @"O", @"L", @"I", @"D", nil];
-        _acronymsInSequence = [NSArray arrayWithObjects:@"SRP", @"OCP", @"LSP", @"ISP", @"DIP", nil];
+        _acronymsInSequence = [NSArray arrayWithObjects:@"SRzzzzzzP", @"OCP", @"LSP", @"ISP", @"DIP", nil];
         // The following is for demo use for CocoaConf Columbus 2012.
 //        MUConcept *cocoaconf = [[MUConcept alloc] 
 //                                initWithInitial:@"C" 
