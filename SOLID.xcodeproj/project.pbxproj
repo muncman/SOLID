@@ -595,6 +595,7 @@
 				INFOPLIST_FILE = "SOLIDTests copy-Info.plist";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "SOLIDTests copy";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -615,6 +616,7 @@
 				INFOPLIST_FILE = "SOLIDTests copy-Info.plist";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "SOLIDTests copy";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
