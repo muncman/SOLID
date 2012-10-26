@@ -44,8 +44,6 @@ rm -rf $INSTRUMENTS_OUTPUT_DIR
 mkdir -p $INSTRUMENTS_OUTPUT_DIR
 
 # cd ..
-# xcodebuild -target SOLID -configuration Debug -sdk iphonesimulator TARGETED_DEVICE_FAMILY=1 clean build
-# xcodebuild -sdk iphonesimulator build CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR
 xcodebuild -sdk iphonesimulator CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR clean build
 # cd -
 
@@ -55,8 +53,6 @@ xcodebuild -sdk iphonesimulator CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR c
         -c "Add :UIDeviceFamily array" \
         -c "Add :UIDeviceFamily: integer $DEVICE_TYPE"
 
-# instruments -t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate $INSTRUMENTS_BUILD_DIR/SOLID.app -e UIASCRIPT "$WORKSPACE/SOLIDFunc/testSOLID.js" -e UIARESULTSPATH $INSTRUMENTS_OUTPUT_DIR 
-# -t /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate \
 instruments \
 	-t "$WORKSPACE/SOLIDFunc/Automation.tracetemplate" \
 	$INSTRUMENTS_BUILD_DIR/SOLID.app \

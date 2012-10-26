@@ -30,6 +30,16 @@
 		3803A7C015BE7E460062C114 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386149C115AA2C3B00E79B6C /* InfoPlist.strings */; };
 		3803A7C115BE7E460062C114 /* ocunit2junit.rb in Resources */ = {isa = PBXBuildFile; fileRef = 3803A75915BE171A0062C114 /* ocunit2junit.rb */; };
 		3803A7C215BE7E460062C114 /* RunPlatformUnitTests in Resources */ = {isa = PBXBuildFile; fileRef = 3803A75A15BE171A0062C114 /* RunPlatformUnitTests */; };
+		382394D0163ACFCD00098960 /* run_gcovr.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394C6163ACFCD00098960 /* run_gcovr.sh */; };
+		382394D1163ACFCD00098960 /* cli_unit_tests_with_results.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394C7163ACFCD00098960 /* cli_unit_tests_with_results.sh */; };
+		382394D2163ACFCD00098960 /* cli_unit_tests_with_results.rb in Resources */ = {isa = PBXBuildFile; fileRef = 382394C8163ACFCD00098960 /* cli_unit_tests_with_results.rb */; };
+		382394D3163ACFCD00098960 /* cli_unit_tests_with_ios-sim.rb in Resources */ = {isa = PBXBuildFile; fileRef = 382394C9163ACFCD00098960 /* cli_unit_tests_with_ios-sim.rb */; };
+		382394D4163ACFCD00098960 /* clean_compile_test.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CA163ACFCD00098960 /* clean_compile_test.sh */; };
+		382394D5163ACFCD00098960 /* clean_compile_noTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CB163ACFCD00098960 /* clean_compile_noTests.sh */; };
+		382394D6163ACFCD00098960 /* appledoc.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CC163ACFCD00098960 /* appledoc.sh */; };
+		382394D7163ACFCD00098960 /* run_cpd.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CD163ACFCD00098960 /* run_cpd.sh */; };
+		382394D8163ACFCD00098960 /* testflight_deploy.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CE163ACFCD00098960 /* testflight_deploy.sh */; };
+		382394D9163ACFCD00098960 /* service_check.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CF163ACFCD00098960 /* service_check.sh */; };
 		3861499515AA2C3B00E79B6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499415AA2C3B00E79B6C /* UIKit.framework */; };
 		3861499715AA2C3B00E79B6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499615AA2C3B00E79B6C /* Foundation.framework */; };
 		3861499915AA2C3B00E79B6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499815AA2C3B00E79B6C /* CoreGraphics.framework */; };
@@ -93,6 +103,16 @@
 		3803A7B115BE79690062C114 /* CoverageFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverageFix.m; sourceTree = "<group>"; };
 		3803A7C715BE7E460062C114 /* SOLIDTests copy.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOLIDTests copy.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3803A7C815BE7E460062C114 /* SOLIDTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SOLIDTests copy-Info.plist"; path = "/Users/muncman/workspace/SOLID/SOLIDTests copy-Info.plist"; sourceTree = "<absolute>"; };
+		382394C6163ACFCD00098960 /* run_gcovr.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_gcovr.sh; path = scripts/run_gcovr.sh; sourceTree = "<group>"; };
+		382394C7163ACFCD00098960 /* cli_unit_tests_with_results.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = cli_unit_tests_with_results.sh; path = scripts/cli_unit_tests_with_results.sh; sourceTree = "<group>"; };
+		382394C8163ACFCD00098960 /* cli_unit_tests_with_results.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = cli_unit_tests_with_results.rb; path = scripts/cli_unit_tests_with_results.rb; sourceTree = "<group>"; };
+		382394C9163ACFCD00098960 /* cli_unit_tests_with_ios-sim.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = "cli_unit_tests_with_ios-sim.rb"; path = "scripts/cli_unit_tests_with_ios-sim.rb"; sourceTree = "<group>"; };
+		382394CA163ACFCD00098960 /* clean_compile_test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = clean_compile_test.sh; path = scripts/clean_compile_test.sh; sourceTree = "<group>"; };
+		382394CB163ACFCD00098960 /* clean_compile_noTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = clean_compile_noTests.sh; path = scripts/clean_compile_noTests.sh; sourceTree = "<group>"; };
+		382394CC163ACFCD00098960 /* appledoc.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = appledoc.sh; path = scripts/appledoc.sh; sourceTree = "<group>"; };
+		382394CD163ACFCD00098960 /* run_cpd.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_cpd.sh; path = scripts/run_cpd.sh; sourceTree = "<group>"; };
+		382394CE163ACFCD00098960 /* testflight_deploy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = testflight_deploy.sh; path = scripts/testflight_deploy.sh; sourceTree = "<group>"; };
+		382394CF163ACFCD00098960 /* service_check.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = service_check.sh; path = scripts/service_check.sh; sourceTree = "<group>"; };
 		3861499015AA2C3B00E79B6C /* SOLID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3861499415AA2C3B00E79B6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3861499615AA2C3B00E79B6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -211,10 +231,28 @@
 			name = SOLIDFunc;
 			sourceTree = "<group>";
 		};
+		382394C5163ACFB400098960 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				382394CC163ACFCD00098960 /* appledoc.sh */,
+				382394CB163ACFCD00098960 /* clean_compile_noTests.sh */,
+				382394CA163ACFCD00098960 /* clean_compile_test.sh */,
+				382394C9163ACFCD00098960 /* cli_unit_tests_with_ios-sim.rb */,
+				382394C8163ACFCD00098960 /* cli_unit_tests_with_results.rb */,
+				382394C7163ACFCD00098960 /* cli_unit_tests_with_results.sh */,
+				382394CD163ACFCD00098960 /* run_cpd.sh */,
+				382394C6163ACFCD00098960 /* run_gcovr.sh */,
+				382394CF163ACFCD00098960 /* service_check.sh */,
+				382394CE163ACFCD00098960 /* testflight_deploy.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
 		3861498515AA2C3A00E79B6C = {
 			isa = PBXGroup;
 			children = (
 				3803A75F15BE354C0062C114 /* Icons */,
+				382394C5163ACFB400098960 /* Scripts */,
 				3861499A15AA2C3B00E79B6C /* SOLID */,
 				386149BE15AA2C3B00E79B6C /* SOLIDTests */,
 				3803A78915BE5B5C0062C114 /* SOLIDFunc */,
@@ -441,6 +479,16 @@
 				387ED5E116398CC70074A89A /* Default-Portrait@2x~ipad.png in Resources */,
 				387ED5E316398CCD0074A89A /* Default-Landscape~ipad.png in Resources */,
 				387ED5E516398CD30074A89A /* Default-Landscape@2x~ipad.png in Resources */,
+				382394D0163ACFCD00098960 /* run_gcovr.sh in Resources */,
+				382394D1163ACFCD00098960 /* cli_unit_tests_with_results.sh in Resources */,
+				382394D2163ACFCD00098960 /* cli_unit_tests_with_results.rb in Resources */,
+				382394D3163ACFCD00098960 /* cli_unit_tests_with_ios-sim.rb in Resources */,
+				382394D4163ACFCD00098960 /* clean_compile_test.sh in Resources */,
+				382394D5163ACFCD00098960 /* clean_compile_noTests.sh in Resources */,
+				382394D6163ACFCD00098960 /* appledoc.sh in Resources */,
+				382394D7163ACFCD00098960 /* run_cpd.sh in Resources */,
+				382394D8163ACFCD00098960 /* testflight_deploy.sh in Resources */,
+				382394D9163ACFCD00098960 /* service_check.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
