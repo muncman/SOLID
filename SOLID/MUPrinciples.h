@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 @class MUConcept;
 
-// Descriptions from Wikipedia: https://en.wikipedia.org/wiki/Solid_(object-oriented_design) and Uncle Bob: http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
+// Descriptions from Wikipedia: https://en.wikipedia.org/wiki/Solid_(object-oriented_design)
+// and Uncle Bob: http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
 
 @interface MUPrinciples : NSObject 
 

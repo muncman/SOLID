@@ -6,25 +6,24 @@
 //  Copyright (c) 2012 Method Up. All rights reserved.
 //
 
+#import "MUPrinciples.h"
+#import "MUConcept.h"
+
 /** This class demonstrates AppleDoc.
- 
+
  A second paragraph comes after an empty line.
- 
+
  int i=0;
  i++;
- 
+
  And some sample code can also be in a block, but indented with a TAB.
- 
+
  You can also add lists, but have to keep an empty line between these blocks.
- 
+
  - One
  - Two
  - Three
  */
-
-#import "MUPrinciples.h"
-#import "MUConcept.h"
-
 @interface MUPrinciples() {
     NSDictionary *_concepts;
     NSArray *_keysInSequence;
