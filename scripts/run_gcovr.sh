@@ -5,6 +5,6 @@ if [ -z "$WORKSPACE" ]
 then
 	export WORKSPACE=`pwd`
 fi
-echo "WORKSPACE is `$WORKSPACE"
+echo "WORKSPACE is $WORKSPACE"
 echo "Generating coverage.xml"
 "$WORKSPACE/gcovr" -r "$WORKSPACE" --e '.*UnitTests.*' --xml > "$WORKSPACE/coverage.xml"
