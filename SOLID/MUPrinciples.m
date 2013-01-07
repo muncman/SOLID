@@ -74,7 +74,7 @@
                                                                @"DIP description.")];
         NSArray *values = [NSArray arrayWithObjects:single, openClosed, liskov, interface, dependency, nil];
         _keysInSequence = [NSArray arrayWithObjects:@"S", @"O", @"L", @"I", @"D", nil];
-        _acronymsInSequence = [NSArray arrayWithObjects:@"SRxxxxxxxxP", @"OCP", @"LSP", @"ISP", @"DIP", nil];
+        _acronymsInSequence = [NSArray arrayWithObjects:@"SRP", @"OCP", @"LSP", @"ISP", @"DIP", nil];
         _concepts = [NSDictionary dictionaryWithObjects:values forKeys:_keysInSequence];
     }
     return self;
