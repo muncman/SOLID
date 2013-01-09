@@ -1,0 +1,1 @@
+curl -s -F "token=$PUSHOVER_TOKEN" -F "user=$PUSHOVER_USER" -F "message=Jenkins Demo" https://api.pushover.net/1/messages.json
