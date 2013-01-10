@@ -6,6 +6,7 @@ set -e
 #
 
 xcodebuild \
+	-scheme SOLID \
 	-target SOLID \
 	-configuration Debug \
 	-arch i386 \
