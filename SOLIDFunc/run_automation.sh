@@ -51,9 +51,7 @@ BUILD_DIR=/tmp/AutomationExample
 mkdir -p $BUILD_DIR
 
 # Build our application and place the final bundle in our temporary directory
-cd ..
 xcodebuild -sdk iphonesimulator clean build CONFIGURATION_BUILD_DIR=$BUILD_DIR
-cd -
 
 # Clean out any existing automation results (we don't need to keep them for this demo)
 rm -rf automation_results
@@ -83,12 +81,15 @@ mkdir -p automation_results
 #
 # Read the comments in the "unix_instruments" script for why we need it as a
 # wrapper around the "instruments" command.
+cd SOLIDFunc
+echo `pwd`
 ./unix_instruments \
   -D automation_results/trace \
   -t UIAutomationTemplate.tracetemplate \
   $BUILD_DIR/SOLID.app \
   -e UIARESULTSPATH automation_results \
   -e UIASCRIPT "./$SCRIPT_NAME"
+cd -
 
 # Another way to make sure the simulator isn't already running.
 killall -m -KILL "iPhone Simulator"
