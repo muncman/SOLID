@@ -19,6 +19,7 @@
 # THE SOFTWARE.
 
 # For benefit of log files.
+echo pwd = `pwd`
 echo $0 $*
 # Make sure bash fails completely if any command fails
 set -e
@@ -31,10 +32,9 @@ if [ -z $1 ]
 then
 	echo "USAGE: run_uiautomation.sh <test-javascript-file-relative-to-workspace-root> [1|2]"
 	echo "       1 for iPhone, 2 for iPad. Default: iPhone."
-	echo "EXAMPLE: ./SOLIDFunc/run_uiautomation.sh SOLIDFunc/testSOLID_iPhone.js 2"
+	echo "EXAMPLE: ./run_uiautomation.sh SOLIDFunc/testSOLID_iPhone.js 2"
 	exit 1
 fi
-echo "SCRIPT_NAME is $SCRIPT_NAME"
 
 DEVICE_TYPE=$2
 if [ -z $2 ]
@@ -81,7 +81,9 @@ mkdir -p automation_results
 #
 # Read the comments in the "unix_instruments" script for why we need it as a
 # wrapper around the "instruments" command.
-cd SOLIDFunc
+# TODO: no time now, odd errors inside unix_instruments, 
+#       later figure out how to get these back inside SOLIDFunc. 
+#cd SOLIDFunc
 echo `pwd`
 ./unix_instruments \
   -D automation_results/trace \
@@ -89,7 +91,7 @@ echo `pwd`
   $BUILD_DIR/SOLID.app \
   -e UIARESULTSPATH automation_results \
   -e UIASCRIPT "$SCRIPT_NAME"
-cd -
+#cd -
 
 # Another way to make sure the simulator isn't already running.
 killall -m -KILL "iPhone Simulator"

@@ -35,6 +35,7 @@
 # Author: Jonathan Penn (jonathan@cocoamanifest.net)
 #
 
+echo pwd = `pwd` ; echo $0 $* # For benefit of log files.
 set -e  # Bomb on any script errors
 
 run_instruments() {
@@ -51,7 +52,7 @@ run_instruments() {
 
   # Cat the instruments output to tee which outputs to stdout and saves to
   # $output at the same time
-  cat < /dev/ptyvf | tee $output
+  cat < /dev/ptyvf | tee $output # TODO: need a time out/reset for this if failure elsewhere?
 
   # Clear the process id we saved when forking instruments so the cleanup
   # function called on exit knows it doesn't have to kill anything
