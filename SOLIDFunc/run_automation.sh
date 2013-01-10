@@ -88,7 +88,7 @@ echo `pwd`
   -t UIAutomationTemplate.tracetemplate \
   $BUILD_DIR/SOLID.app \
   -e UIARESULTSPATH automation_results \
-  -e UIASCRIPT "./$SCRIPT_NAME"
+  -e UIASCRIPT "$SCRIPT_NAME"
 cd -
 
 # Another way to make sure the simulator isn't already running.
