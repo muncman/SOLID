@@ -1,0 +1,2 @@
+UIAutomation scripts here are from Jonathan Penn, his gists and CocoaManifest blog, and finally (a fork of) his AutomationExample on GitHub,
+They are modified in the fork. 

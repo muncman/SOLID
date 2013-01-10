@@ -24,6 +24,7 @@ Doxygen/*
 Appledoc/*
 test-reports
 unit_test_results
+automation_results
 output/
 cpd-output.xml
 coverage.xml
