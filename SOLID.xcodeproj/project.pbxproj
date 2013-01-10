@@ -63,8 +63,11 @@
 		387ED5E116398CC70074A89A /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5E016398CC70074A89A /* Default-Portrait@2x~ipad.png */; };
 		387ED5E316398CCD0074A89A /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5E216398CCD0074A89A /* Default-Landscape~ipad.png */; };
 		387ED5E516398CD30074A89A /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5E416398CD30074A89A /* Default-Landscape@2x~ipad.png */; };
-		388E0B4015BF1969009BB531 /* run_uiautomation.rb in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3415BF1969009BB531 /* run_uiautomation.rb */; };
-		388E0B4115BF1969009BB531 /* run_uiautomation.sh in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3515BF1969009BB531 /* run_uiautomation.sh */; };
+		3886634B169F7E9F00565183 /* pushover_notification.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3886634A169F7E9F00565183 /* pushover_notification.sh */; };
+		38866351169F7EFE00565183 /* run_automation.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3886634D169F7EFE00565183 /* run_automation.sh */; };
+		38866352169F7EFE00565183 /* unix_instruments in Resources */ = {isa = PBXBuildFile; fileRef = 3886634E169F7EFE00565183 /* unix_instruments */; };
+		38866353169F7EFE00565183 /* env.js in Sources */ = {isa = PBXBuildFile; fileRef = 3886634F169F7EFE00565183 /* env.js */; };
+		38866354169F7EFE00565183 /* UIAutomationTemplate.tracetemplate in Resources */ = {isa = PBXBuildFile; fileRef = 38866350169F7EFE00565183 /* UIAutomationTemplate.tracetemplate */; };
 		388E0B4515BF1969009BB531 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3A15BF1969009BB531 /* LICENSE */; };
 /* End PBXBuildFile section */
 
@@ -149,8 +152,11 @@
 		387ED5E016398CC70074A89A /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		387ED5E216398CCD0074A89A /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		387ED5E416398CD30074A89A /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
-		388E0B3415BF1969009BB531 /* run_uiautomation.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = run_uiautomation.rb; path = SOLIDFunc/run_uiautomation.rb; sourceTree = "<group>"; };
-		388E0B3515BF1969009BB531 /* run_uiautomation.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_uiautomation.sh; path = SOLIDFunc/run_uiautomation.sh; sourceTree = "<group>"; };
+		3886634A169F7E9F00565183 /* pushover_notification.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = pushover_notification.sh; path = scripts/pushover_notification.sh; sourceTree = "<group>"; };
+		3886634D169F7EFE00565183 /* run_automation.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_automation.sh; sourceTree = "<group>"; };
+		3886634E169F7EFE00565183 /* unix_instruments */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unix_instruments; sourceTree = "<group>"; };
+		3886634F169F7EFE00565183 /* env.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = env.js; sourceTree = "<group>"; };
+		38866350169F7EFE00565183 /* UIAutomationTemplate.tracetemplate */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = UIAutomationTemplate.tracetemplate; sourceTree = "<group>"; };
 		388E0B3815BF1969009BB531 /* assertions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = assertions.js; sourceTree = "<group>"; };
 		388E0B3915BF1969009BB531 /* lang-ext.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-ext.js"; sourceTree = "<group>"; };
 		388E0B3A15BF1969009BB531 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -220,8 +226,6 @@
 		3803A78915BE5B5C0062C114 /* SOLIDFunc */ = {
 			isa = PBXGroup;
 			children = (
-				388E0B3415BF1969009BB531 /* run_uiautomation.rb */,
-				388E0B3515BF1969009BB531 /* run_uiautomation.sh */,
 				3803A7C815BE7E460062C114 /* SOLIDTests copy-Info.plist */,
 				387ED5DA16398AE20074A89A /* testSOLID_iPad.js */,
 				387ED5DB16398AE20074A89A /* testSOLID_iPhone.js */,
@@ -240,6 +244,7 @@
 				382394C9163ACFCD00098960 /* cli_unit_tests_with_ios-sim.rb */,
 				382394C8163ACFCD00098960 /* cli_unit_tests_with_results.rb */,
 				382394C7163ACFCD00098960 /* cli_unit_tests_with_results.sh */,
+				3886634A169F7E9F00565183 /* pushover_notification.sh */,
 				382394CD163ACFCD00098960 /* run_cpd.sh */,
 				382394C6163ACFCD00098960 /* run_gcovr.sh */,
 				382394CF163ACFCD00098960 /* service_check.sh */,
@@ -256,6 +261,7 @@
 				3861499A15AA2C3B00E79B6C /* SOLID */,
 				386149BE15AA2C3B00E79B6C /* SOLIDTests */,
 				3803A78915BE5B5C0062C114 /* SOLIDFunc */,
+				3886634C169F7ED500565183 /* UIAutomation */,
 				3861499315AA2C3B00E79B6C /* Frameworks */,
 				3861499115AA2C3B00E79B6C /* Products */,
 			);
@@ -337,6 +343,17 @@
 				386149C015AA2C3B00E79B6C /* SOLIDTests-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3886634C169F7ED500565183 /* UIAutomation */ = {
+			isa = PBXGroup;
+			children = (
+				3886634F169F7EFE00565183 /* env.js */,
+				3886634D169F7EFE00565183 /* run_automation.sh */,
+				38866350169F7EFE00565183 /* UIAutomationTemplate.tracetemplate */,
+				3886634E169F7EFE00565183 /* unix_instruments */,
+			);
+			name = UIAutomation;
 			sourceTree = "<group>";
 		};
 		388E0B3715BF1969009BB531 /* tuneup_js */ = {
@@ -450,8 +467,6 @@
 				3803A7C015BE7E460062C114 /* InfoPlist.strings in Resources */,
 				3803A7C115BE7E460062C114 /* ocunit2junit.rb in Resources */,
 				3803A7C215BE7E460062C114 /* RunPlatformUnitTests in Resources */,
-				388E0B4015BF1969009BB531 /* run_uiautomation.rb in Resources */,
-				388E0B4115BF1969009BB531 /* run_uiautomation.sh in Resources */,
 				388E0B4515BF1969009BB531 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +504,10 @@
 				382394D7163ACFCD00098960 /* run_cpd.sh in Resources */,
 				382394D8163ACFCD00098960 /* testflight_deploy.sh in Resources */,
 				382394D9163ACFCD00098960 /* service_check.sh in Resources */,
+				3886634B169F7E9F00565183 /* pushover_notification.sh in Resources */,
+				38866351169F7EFE00565183 /* run_automation.sh in Resources */,
+				38866352169F7EFE00565183 /* unix_instruments in Resources */,
+				38866354169F7EFE00565183 /* UIAutomationTemplate.tracetemplate in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +575,7 @@
 				386149B115AA2C3B00E79B6C /* MUDetailViewController.m in Sources */,
 				386149D515AA689D00E79B6C /* MUPrinciples.m in Sources */,
 				386149D915AA69D000E79B6C /* MUConcept.m in Sources */,
+				38866353169F7EFE00565183 /* env.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
