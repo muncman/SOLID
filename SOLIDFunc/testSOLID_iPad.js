@@ -20,7 +20,7 @@ UIALogger.logMessage('==== Starting Tests ====');
 test('expected acronym', function(target, app) {
   var window = app.mainWindow();
   // Failing due to the odd iPad issue seen in unit tests: assertEquals('S.O.L.I.D.', window.navigationBar().buttons()[0].name(), 'It oughtta...');
-  assertEquals('SRPxxxxxx', window.navigationBar().name(), 'It oughtta be the first acronym by default.');
+  assertEquals('SRP', window.navigationBar().name(), 'It oughtta be the first acronym by default.');
 });
 
 UIALogger.logMessage('==== Tests Completed ====');
