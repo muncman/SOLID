@@ -47,7 +47,4 @@ echo "Generating coverage.xml"
 "$WORKSPACE/gcovr" -r "$WORKSPACE" --e '.*UnitTests.*' --keep --xml > "$WORKSPACE/coverage.xml"
 
 # FIXME: This is still unreliable with Xcode 4.5/LLVM. 
-# In CI, everything seems to run twice, and only sometimes do the tests run the second time. (else no .gcda files!)
-# First and Second commands, from log: 
-# The full launch command: /usr/local/bin/ios-sim launch "/Users/muncman/.jenkins/jobs/code_coverage_with_gcovr/workspace/build/SOLID.app" --verbose --setenv XCInjectBundleInto="/Users/muncman/.jenkins/jobs/code_coverage_with_gcovr/workspace/build/SOLID.app/SOLID" --setenv DYLD_INSERT_LIBRARIES="/../../Library/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection" --setenv XCInjectBundle="/Users/muncman/.jenkins/jobs/code_coverage_with_gcovr/workspace/build/SOLIDTests.octest" --sdk 5.1 --args -SenTest All /Users/muncman/.jenkins/jobs/code_coverage_with_gcovr/workspace/build/SOLIDTests.octest
-# The full launch command: /usr/local/bin/ios-sim launch "/Users/muncman/.jenkins/jobs/code_coverage_with_gcovr/workspace/CoverageBuild/SOLID.app" --verbose --setenv XCInjectBundleInto="/Users/muncman/.jenkins/jobs/code_coverage_with_gcovr/workspace/CoverageBuild/SOLID.app/SOLID" --setenv XCInjectBundle="/Users/muncman/.jenkins/jobs/code_coverage_with_gcovr/workspace/CoverageBuild/SOLIDTests.octest" --setenv DYLD_INSERT_LIBRARIES="/../../Library/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection" --sdk 5.1 --args -SenTest All /Users/muncman/.jenkins/jobs/code_coverage_with_gcovr/workspace/CoverageBuild/SOLIDTests.octest
+# Only sometimes do the tests run the second time. (else no .gcda files!)
