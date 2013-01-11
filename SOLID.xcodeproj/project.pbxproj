@@ -70,7 +70,6 @@
 		3886635D169FC8D800565183 /* run_gcovr.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394C6163ACFCD00098960 /* run_gcovr.sh */; };
 		3886635E169FC8D800565183 /* service_check.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CF163ACFCD00098960 /* service_check.sh */; };
 		3886635F169FC8D800565183 /* testflight_deploy.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CE163ACFCD00098960 /* testflight_deploy.sh */; };
-		38866360169FC8DF00565183 /* env.js in Resources */ = {isa = PBXBuildFile; fileRef = 3886634F169F7EFE00565183 /* env.js */; };
 		38866361169FC8DF00565183 /* run_automation.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3886634D169F7EFE00565183 /* run_automation.sh */; };
 		38866362169FC8DF00565183 /* UIAutomationTemplate.tracetemplate in Resources */ = {isa = PBXBuildFile; fileRef = 38866350169F7EFE00565183 /* UIAutomationTemplate.tracetemplate */; };
 		38866363169FC8DF00565183 /* unix_instruments in Resources */ = {isa = PBXBuildFile; fileRef = 3886634E169F7EFE00565183 /* unix_instruments */; };
@@ -494,7 +493,6 @@
 				3886636D169FC90500565183 /* tuneup.js in Resources */,
 				3886636E169FC90500565183 /* uiautomation-ext.js in Resources */,
 				3886636F169FC90500565183 /* uiautomationHelpers.js in Resources */,
-				38866360169FC8DF00565183 /* env.js in Resources */,
 				38866361169FC8DF00565183 /* run_automation.sh in Resources */,
 				38866362169FC8DF00565183 /* UIAutomationTemplate.tracetemplate in Resources */,
 				38866363169FC8DF00565183 /* unix_instruments in Resources */,
