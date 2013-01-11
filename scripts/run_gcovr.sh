@@ -10,11 +10,8 @@ echo "WORKSPACE is $WORKSPACE"
 # TODO: killall -m -KILL "iPhone Simulator"
 
 BUILD_DIR=$WORKSPACE/CoverageBuild
-BUILD_DIR=$WORKSPACE/CoverageTemp
-
-echo .
-echo $DERIVED_FILE_DIR
-echo .
+TEMP_DIR=$WORKSPACE/CoverageTemp
+# rm -rf ./SOLIDTests.build/
 
 # xcodebuild \
 # 	-scheme SOLIDTests \
@@ -34,6 +31,7 @@ echo .
 # 	TEST_AFTER_BUILD=YES
 
 xcodebuild \
+	-scheme SOLIDTests \
 	-target SOLIDTests \
 	-configuration Debug \
 	-arch i386 \
