@@ -59,3 +59,4 @@ echo "Generating coverage.xml"
 # mkdir -p $INSTRUMENTS_BUILD_DIR
 # xcodebuild -target SOLIDTests -sdk iphonesimulator5.1 -arch i386 -scheme "CLI_UnitTests" CONFIGURATION_BUILD_DIR=$INSTRUMENTS_BUILD_DIR clean build TEST_AFTER_BUILD=YES
 # "$WORKSPACE/scripts/run_gcovr.sh"
+# TODO: next, revist -lgcov in the Other Linker Flags. 
