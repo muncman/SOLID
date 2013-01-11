@@ -10,4 +10,3 @@ curl http://testflightapp.com/api/builds.json \
 	-F notes="This is an autodeploy build from Jenkins via curl" \
 	-F distribution_lists='memyself' \
 	-F notify=True 
-	-F replace=False
