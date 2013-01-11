@@ -21,15 +21,6 @@
 		3803A78015BE37EC0062C114 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3803A76515BE35590062C114 /* Icon-Small@2x.png */; };
 		3803A78815BE5AFE0062C114 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3803A78715BE5AFE0062C114 /* Default-Portrait~ipad.png */; };
 		3803A7B215BE79690062C114 /* CoverageFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803A7B115BE79690062C114 /* CoverageFix.m */; };
-		3803A7B815BE7E460062C114 /* MUConceptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DB15AA87E500E79B6C /* MUConceptTest.m */; };
-		3803A7B915BE7E460062C114 /* MUPrinciplesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 386149DE15AA8B7C00E79B6C /* MUPrinciplesTest.m */; };
-		3803A7BA15BE7E460062C114 /* CoverageFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803A7B115BE79690062C114 /* CoverageFix.m */; };
-		3803A7BC15BE7E460062C114 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386149B815AA2C3B00E79B6C /* SenTestingKit.framework */; };
-		3803A7BD15BE7E460062C114 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499415AA2C3B00E79B6C /* UIKit.framework */; };
-		3803A7BE15BE7E460062C114 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499615AA2C3B00E79B6C /* Foundation.framework */; };
-		3803A7C015BE7E460062C114 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386149C115AA2C3B00E79B6C /* InfoPlist.strings */; };
-		3803A7C115BE7E460062C114 /* ocunit2junit.rb in Resources */ = {isa = PBXBuildFile; fileRef = 3803A75915BE171A0062C114 /* ocunit2junit.rb */; };
-		3803A7C215BE7E460062C114 /* RunPlatformUnitTests in Resources */ = {isa = PBXBuildFile; fileRef = 3803A75A15BE171A0062C114 /* RunPlatformUnitTests */; };
 		382394D0163ACFCD00098960 /* run_gcovr.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394C6163ACFCD00098960 /* run_gcovr.sh */; };
 		382394D1163ACFCD00098960 /* cli_unit_tests_with_results.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394C7163ACFCD00098960 /* cli_unit_tests_with_results.sh */; };
 		382394D2163ACFCD00098960 /* cli_unit_tests_with_results.rb in Resources */ = {isa = PBXBuildFile; fileRef = 382394C8163ACFCD00098960 /* cli_unit_tests_with_results.rb */; };
@@ -68,17 +59,36 @@
 		38866352169F7EFE00565183 /* unix_instruments in Resources */ = {isa = PBXBuildFile; fileRef = 3886634E169F7EFE00565183 /* unix_instruments */; };
 		38866353169F7EFE00565183 /* env.js in Sources */ = {isa = PBXBuildFile; fileRef = 3886634F169F7EFE00565183 /* env.js */; };
 		38866354169F7EFE00565183 /* UIAutomationTemplate.tracetemplate in Resources */ = {isa = PBXBuildFile; fileRef = 38866350169F7EFE00565183 /* UIAutomationTemplate.tracetemplate */; };
-		388E0B4515BF1969009BB531 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3A15BF1969009BB531 /* LICENSE */; };
+		38866355169FC8D800565183 /* appledoc.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CC163ACFCD00098960 /* appledoc.sh */; };
+		38866356169FC8D800565183 /* clean_compile_noTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CB163ACFCD00098960 /* clean_compile_noTests.sh */; };
+		38866357169FC8D800565183 /* clean_compile_test.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CA163ACFCD00098960 /* clean_compile_test.sh */; };
+		38866358169FC8D800565183 /* cli_unit_tests_with_ios-sim.rb in Resources */ = {isa = PBXBuildFile; fileRef = 382394C9163ACFCD00098960 /* cli_unit_tests_with_ios-sim.rb */; };
+		38866359169FC8D800565183 /* cli_unit_tests_with_results.rb in Resources */ = {isa = PBXBuildFile; fileRef = 382394C8163ACFCD00098960 /* cli_unit_tests_with_results.rb */; };
+		3886635A169FC8D800565183 /* cli_unit_tests_with_results.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394C7163ACFCD00098960 /* cli_unit_tests_with_results.sh */; };
+		3886635B169FC8D800565183 /* pushover_notification.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3886634A169F7E9F00565183 /* pushover_notification.sh */; };
+		3886635C169FC8D800565183 /* run_cpd.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CD163ACFCD00098960 /* run_cpd.sh */; };
+		3886635D169FC8D800565183 /* run_gcovr.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394C6163ACFCD00098960 /* run_gcovr.sh */; };
+		3886635E169FC8D800565183 /* service_check.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CF163ACFCD00098960 /* service_check.sh */; };
+		3886635F169FC8D800565183 /* testflight_deploy.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CE163ACFCD00098960 /* testflight_deploy.sh */; };
+		38866360169FC8DF00565183 /* env.js in Resources */ = {isa = PBXBuildFile; fileRef = 3886634F169F7EFE00565183 /* env.js */; };
+		38866361169FC8DF00565183 /* run_automation.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3886634D169F7EFE00565183 /* run_automation.sh */; };
+		38866362169FC8DF00565183 /* UIAutomationTemplate.tracetemplate in Resources */ = {isa = PBXBuildFile; fileRef = 38866350169F7EFE00565183 /* UIAutomationTemplate.tracetemplate */; };
+		38866363169FC8DF00565183 /* unix_instruments in Resources */ = {isa = PBXBuildFile; fileRef = 3886634E169F7EFE00565183 /* unix_instruments */; };
+		38866364169FC90500565183 /* SOLIDTests copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3803A7C815BE7E460062C114 /* SOLIDTests copy-Info.plist */; };
+		38866365169FC90500565183 /* testSOLID_iPad.js in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5DA16398AE20074A89A /* testSOLID_iPad.js */; };
+		38866366169FC90500565183 /* testSOLID_iPhone.js in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5DB16398AE20074A89A /* testSOLID_iPhone.js */; };
+		38866367169FC90500565183 /* assertions.js in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3815BF1969009BB531 /* assertions.js */; };
+		38866368169FC90500565183 /* lang-ext.js in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3915BF1969009BB531 /* lang-ext.js */; };
+		38866369169FC90500565183 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3A15BF1969009BB531 /* LICENSE */; };
+		3886636A169FC90500565183 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3B15BF1969009BB531 /* README.md */; };
+		3886636B169FC90500565183 /* screen.js in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3C15BF1969009BB531 /* screen.js */; };
+		3886636C169FC90500565183 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3D15BF1969009BB531 /* test.js */; };
+		3886636D169FC90500565183 /* tuneup.js in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3E15BF1969009BB531 /* tuneup.js */; };
+		3886636E169FC90500565183 /* uiautomation-ext.js in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3F15BF1969009BB531 /* uiautomation-ext.js */; };
+		3886636F169FC90500565183 /* uiautomationHelpers.js in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5DC16398AE20074A89A /* uiautomationHelpers.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3803A7B615BE7E460062C114 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3861498715AA2C3A00E79B6C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3861498F15AA2C3B00E79B6C;
-			remoteInfo = SOLID;
-		};
 		386149BC15AA2C3B00E79B6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3861498715AA2C3A00E79B6C /* Project object */;
@@ -104,7 +114,6 @@
 		3803A78715BE5AFE0062C114 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		3803A7B015BE79690062C114 /* CoverageFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverageFix.h; sourceTree = "<group>"; };
 		3803A7B115BE79690062C114 /* CoverageFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverageFix.m; sourceTree = "<group>"; };
-		3803A7C715BE7E460062C114 /* SOLIDTests copy.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOLIDTests copy.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3803A7C815BE7E460062C114 /* SOLIDTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SOLIDTests copy-Info.plist"; path = "/Users/muncman/workspace/SOLID/SOLIDTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		382394C6163ACFCD00098960 /* run_gcovr.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_gcovr.sh; path = scripts/run_gcovr.sh; sourceTree = "<group>"; };
 		382394C7163ACFCD00098960 /* cli_unit_tests_with_results.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = cli_unit_tests_with_results.sh; path = scripts/cli_unit_tests_with_results.sh; sourceTree = "<group>"; };
@@ -168,16 +177,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3803A7BB15BE7E460062C114 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3803A7BC15BE7E460062C114 /* SenTestingKit.framework in Frameworks */,
-				3803A7BD15BE7E460062C114 /* UIKit.framework in Frameworks */,
-				3803A7BE15BE7E460062C114 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3861498D15AA2C3B00E79B6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,7 +271,6 @@
 			children = (
 				3861499015AA2C3B00E79B6C /* SOLID.app */,
 				386149B715AA2C3B00E79B6C /* SOLIDTests.octest */,
-				3803A7C715BE7E460062C114 /* SOLIDTests copy.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,25 +373,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3803A7B415BE7E460062C114 /* SOLIDTests copy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3803A7C415BE7E460062C114 /* Build configuration list for PBXNativeTarget "SOLIDTests copy" */;
-			buildPhases = (
-				3803A7B715BE7E460062C114 /* Sources */,
-				3803A7BB15BE7E460062C114 /* Frameworks */,
-				3803A7BF15BE7E460062C114 /* Resources */,
-				3803A7C315BE7E460062C114 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3803A7B515BE7E460062C114 /* PBXTargetDependency */,
-			);
-			name = "SOLIDTests copy";
-			productName = SOLIDTests;
-			productReference = 3803A7C715BE7E460062C114 /* SOLIDTests copy.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 		3861498F15AA2C3B00E79B6C /* SOLID */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 386149C915AA2C3B00E79B6C /* Build configuration list for PBXNativeTarget "SOLID" */;
@@ -454,23 +433,11 @@
 			targets = (
 				3861498F15AA2C3B00E79B6C /* SOLID */,
 				386149B615AA2C3B00E79B6C /* SOLIDTests */,
-				3803A7B415BE7E460062C114 /* SOLIDTests copy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3803A7BF15BE7E460062C114 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3803A7C015BE7E460062C114 /* InfoPlist.strings in Resources */,
-				3803A7C115BE7E460062C114 /* ocunit2junit.rb in Resources */,
-				3803A7C215BE7E460062C114 /* RunPlatformUnitTests in Resources */,
-				388E0B4515BF1969009BB531 /* LICENSE in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3861498E15AA2C3B00E79B6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,6 +482,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38866364169FC90500565183 /* SOLIDTests copy-Info.plist in Resources */,
+				38866365169FC90500565183 /* testSOLID_iPad.js in Resources */,
+				38866366169FC90500565183 /* testSOLID_iPhone.js in Resources */,
+				38866367169FC90500565183 /* assertions.js in Resources */,
+				38866368169FC90500565183 /* lang-ext.js in Resources */,
+				38866369169FC90500565183 /* LICENSE in Resources */,
+				3886636A169FC90500565183 /* README.md in Resources */,
+				3886636B169FC90500565183 /* screen.js in Resources */,
+				3886636C169FC90500565183 /* test.js in Resources */,
+				3886636D169FC90500565183 /* tuneup.js in Resources */,
+				3886636E169FC90500565183 /* uiautomation-ext.js in Resources */,
+				3886636F169FC90500565183 /* uiautomationHelpers.js in Resources */,
+				38866360169FC8DF00565183 /* env.js in Resources */,
+				38866361169FC8DF00565183 /* run_automation.sh in Resources */,
+				38866362169FC8DF00565183 /* UIAutomationTemplate.tracetemplate in Resources */,
+				38866363169FC8DF00565183 /* unix_instruments in Resources */,
+				38866355169FC8D800565183 /* appledoc.sh in Resources */,
+				38866356169FC8D800565183 /* clean_compile_noTests.sh in Resources */,
+				38866357169FC8D800565183 /* clean_compile_test.sh in Resources */,
+				38866358169FC8D800565183 /* cli_unit_tests_with_ios-sim.rb in Resources */,
+				38866359169FC8D800565183 /* cli_unit_tests_with_results.rb in Resources */,
+				3886635A169FC8D800565183 /* cli_unit_tests_with_results.sh in Resources */,
+				3886635B169FC8D800565183 /* pushover_notification.sh in Resources */,
+				3886635C169FC8D800565183 /* run_cpd.sh in Resources */,
+				3886635D169FC8D800565183 /* run_gcovr.sh in Resources */,
+				3886635E169FC8D800565183 /* service_check.sh in Resources */,
+				3886635F169FC8D800565183 /* testflight_deploy.sh in Resources */,
 				386149C315AA2C3B00E79B6C /* InfoPlist.strings in Resources */,
 				3803A75B15BE171A0062C114 /* ocunit2junit.rb in Resources */,
 				3803A75C15BE171A0062C114 /* RunPlatformUnitTests in Resources */,
@@ -524,20 +518,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3803A7C315BE7E460062C114 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-			showEnvVarsInLog = 0;
-		};
 		386149B515AA2C3B00E79B6C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -555,16 +535,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3803A7B715BE7E460062C114 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3803A7B815BE7E460062C114 /* MUConceptTest.m in Sources */,
-				3803A7B915BE7E460062C114 /* MUPrinciplesTest.m in Sources */,
-				3803A7BA15BE7E460062C114 /* CoverageFix.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3861498C15AA2C3B00E79B6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -592,11 +562,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3803A7B515BE7E460062C114 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3861498F15AA2C3B00E79B6C /* SOLID */;
-			targetProxy = 3803A7B615BE7E460062C114 /* PBXContainerItemProxy */;
-		};
 		386149BD15AA2C3B00E79B6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3861498F15AA2C3B00E79B6C /* SOLID */;
@@ -640,50 +605,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3803A7C515BE7E460062C114 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SOLID.app/SOLID";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
-				GENERATE_PROFILING_CODE = YES;
-				INFOPLIST_FILE = "SOLIDTests copy-Info.plist";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "SOLIDTests copy";
-				TEST_AFTER_BUILD = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		3803A7C615BE7E460062C114 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SOLID.app/SOLID";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
-				GENERATE_PROFILING_CODE = YES;
-				INFOPLIST_FILE = "SOLIDTests copy-Info.plist";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "SOLIDTests copy";
-				TEST_AFTER_BUILD = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		386149C715AA2C3B00E79B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -771,6 +692,7 @@
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
+				GCC_VERSION = "";
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "SOLIDTests/SOLIDTests-Info.plist";
 				OTHER_LDFLAGS = "";
@@ -793,6 +715,7 @@
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
+				GCC_VERSION = "";
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "SOLIDTests/SOLIDTests-Info.plist";
 				OTHER_LDFLAGS = "";
@@ -806,15 +729,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3803A7C415BE7E460062C114 /* Build configuration list for PBXNativeTarget "SOLIDTests copy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3803A7C515BE7E460062C114 /* Debug */,
-				3803A7C615BE7E460062C114 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3861498A15AA2C3A00E79B6C /* Build configuration list for PBXProject "SOLID" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

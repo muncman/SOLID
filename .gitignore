@@ -28,6 +28,9 @@ automation_results
 output/
 cpd-output.xml
 coverage.xml
+CoverageBuild
+CoverageTemp
+*.build
 
 # Backup files
 *~.nib
