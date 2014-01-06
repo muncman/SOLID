@@ -1,17 +1,33 @@
 # Mac OS X
-*.DS_Store
+.DS_Store
+
+# Xcode General
+build/
+DerivedData/
 
 # Xcode <= 3
 *.pbxuser
+!default.pbxuser
 *.mode1
+!default.mode1
 *.mode1v3
+!default.mode1v3
 *.mode2v3
+!default.mode2v3
 *.perspective
+!default.perspective
 *.perspectivev3
+!default.perspectivev3
 
 # Xcode 4
 *.xcuserstate
+*.xcuserdatad
+*.xcworkspace
+!default.xcworkspace
 xcuserdata/
+
+# Xcode 5
+*.xccheckout
 
 # Generated files
 build/
@@ -31,8 +47,24 @@ coverage.xml
 CoverageBuild
 CoverageTemp
 *.build
+Reports/*
+previous_build_number.txt
 
 # Backup files
 *~.nib
 *.swp
 *.bak
+
+# From GitHub's Ignore File for Xcode Projects
+# This matches too many valid files: profile
+*.moved-aside
+
+# Avoid checking in Subversion metadata from copied directories!
+.svn
+
+# Slender app output for backups
+SlenderBackup*
+
+# Jetbrains AppCode files
+.idea/
+
