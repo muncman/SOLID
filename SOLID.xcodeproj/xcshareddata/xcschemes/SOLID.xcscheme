@@ -29,12 +29,12 @@
       buildConfiguration = "Debug">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3803A7B415BE7E460062C114"
-               BuildableName = "SOLIDTests copy.octest"
-               BlueprintName = "SOLIDTests copy"
+               BlueprintIdentifier = "386149B615AA2C3B00E79B6C"
+               BuildableName = "SOLIDTests.octest"
+               BlueprintName = "SOLIDTests"
                ReferencedContainer = "container:SOLID.xcodeproj">
             </BuildableReference>
          </TestableReference>
