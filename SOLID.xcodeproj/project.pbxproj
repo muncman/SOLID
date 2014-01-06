@@ -84,6 +84,7 @@
 		3886636D169FC90500565183 /* tuneup.js in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3E15BF1969009BB531 /* tuneup.js */; };
 		3886636E169FC90500565183 /* uiautomation-ext.js in Resources */ = {isa = PBXBuildFile; fileRef = 388E0B3F15BF1969009BB531 /* uiautomation-ext.js */; };
 		3886636F169FC90500565183 /* uiautomationHelpers.js in Resources */ = {isa = PBXBuildFile; fileRef = 387ED5DC16398AE20074A89A /* uiautomationHelpers.js */; };
+		38F536E6187A977F006968BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3861499815AA2C3B00E79B6C /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F536E6187A977F006968BC /* CoreGraphics.framework in Frameworks */,
 				386149B915AA2C3B00E79B6C /* SenTestingKit.framework in Frameworks */,
 				386149BA15AA2C3B00E79B6C /* UIKit.framework in Frameworks */,
 				386149BB15AA2C3B00E79B6C /* Foundation.framework in Frameworks */,
