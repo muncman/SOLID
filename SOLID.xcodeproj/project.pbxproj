@@ -57,7 +57,6 @@
 		3886634B169F7E9F00565183 /* pushover_notification.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3886634A169F7E9F00565183 /* pushover_notification.sh */; };
 		38866351169F7EFE00565183 /* run_automation.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3886634D169F7EFE00565183 /* run_automation.sh */; };
 		38866352169F7EFE00565183 /* unix_instruments in Resources */ = {isa = PBXBuildFile; fileRef = 3886634E169F7EFE00565183 /* unix_instruments */; };
-		38866353169F7EFE00565183 /* env.js in Sources */ = {isa = PBXBuildFile; fileRef = 3886634F169F7EFE00565183 /* env.js */; };
 		38866354169F7EFE00565183 /* UIAutomationTemplate.tracetemplate in Resources */ = {isa = PBXBuildFile; fileRef = 38866350169F7EFE00565183 /* UIAutomationTemplate.tracetemplate */; };
 		38866355169FC8D800565183 /* appledoc.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CC163ACFCD00098960 /* appledoc.sh */; };
 		38866356169FC8D800565183 /* clean_compile_noTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 382394CB163ACFCD00098960 /* clean_compile_noTests.sh */; };
@@ -543,7 +542,6 @@
 				386149B115AA2C3B00E79B6C /* MUDetailViewController.m in Sources */,
 				386149D515AA689D00E79B6C /* MUPrinciples.m in Sources */,
 				386149D915AA69D000E79B6C /* MUConcept.m in Sources */,
-				38866353169F7EFE00565183 /* env.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +656,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
 				INFOPLIST_FILE = "SOLID/SOLID-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = app;
@@ -672,6 +671,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SOLID/SOLID-Prefix.pch";
 				INFOPLIST_FILE = "SOLID/SOLID-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = app;
